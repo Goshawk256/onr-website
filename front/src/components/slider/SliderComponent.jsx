@@ -7,17 +7,17 @@ import img2 from "../../assets/bayi.png";
 import img3 from "../../assets/bayi2.png";
 import "./SliderComponent.css";
 
-const images = [img1, img2, img3, img1, img2, img3, img1, img2, img3, img1];
+const images = [img1, img2, img3];
 
 function SliderComponent() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Aynı anda kaç resim gözüksün
+    slidesToShow: 1, // Aynı anda kaç resim gözüksün
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     arrows: true, // Oklar aktif
   };
 
