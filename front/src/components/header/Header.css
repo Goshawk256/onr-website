@@ -18,7 +18,8 @@
 }
 
 .header-user {
-  width: 10%;
+  width: 7%;
+  margin-right: 2%;
   height: 100%;
   display: flex;
   align-items: center;
