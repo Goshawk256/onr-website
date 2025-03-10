@@ -30,3 +30,19 @@
   background-color: transparent;
   cursor: pointer;
 }
+.header-user {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-user button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
