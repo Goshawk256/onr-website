@@ -2,31 +2,21 @@ import React from "react";
 import "./Home.css";
 import Header from "../../components/header/Header";
 import ProductCard from "../../components/card/productcard/ProductCard";
-import img1 from "../../assets/saat.jpeg";
-import img2 from "../../assets/bayi.png";
-import img3 from "../../assets/bayi2.png";
+import SliderComponent from "../../components/slider/SliderComponent"; // Yeni eklenen slider
+
 function Home() {
   return (
     <div className="home-main">
       <Header />
       <div className="home-content">
         <div className="slider-area">
-          <div className="slider-content">Slider</div>
+          <SliderComponent />
         </div>
 
         <div className="product-area">
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
-          <ProductCard />
+          {Array.from({ length: 12 }).map((_, index) => (
+            <ProductCard key={index} />
+          ))}
         </div>
       </div>
     </div>
