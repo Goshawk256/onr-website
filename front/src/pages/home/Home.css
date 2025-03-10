@@ -7,9 +7,26 @@
   background-color: #ffffff;
 }
 .home-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px; /* Adjust the gap between grid items as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
   width: 100%;
   height: 100%;
+}
+.slider-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+  background-color: red;
+}
+.product-area {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  height: 60%;
 }
