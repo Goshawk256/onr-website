@@ -1,0 +1,15 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
