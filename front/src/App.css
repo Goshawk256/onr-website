@@ -10,7 +10,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  overflow: auto;
+  overflow: hidden;
   overflow-x: hidden;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
