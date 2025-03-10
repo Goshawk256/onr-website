@@ -23,7 +23,7 @@ function Header() {
         <button className="header-button"> Arka Kaplama</button>
         <button className="header-button">Aksesuar</button>
         <button className="header-button">Rova Nano</button>
-        <button className="header-button">Tüm Kategoriler</button>
+        <button className="header-button">Batarya</button>
       </div>
       <div className="header-user">
         <button>
