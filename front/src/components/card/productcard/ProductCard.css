@@ -1,6 +1,6 @@
 .product-card-main {
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

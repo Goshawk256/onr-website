@@ -7,7 +7,10 @@ function Home() {
     <div className="home-main">
       <Header />
       <div className="home-content">
-        <div className="slider-area"></div>
+        <div className="slider-area">
+          <div className="slider-content">Slider</div>
+        </div>
+
         <div className="product-area">
           <ProductCard />
           <ProductCard />
