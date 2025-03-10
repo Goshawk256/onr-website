@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductCard.css";
+import urun from "../../../assets/urun.png";
 function ProductCard() {
   return (
     <div className="product-card-main">
