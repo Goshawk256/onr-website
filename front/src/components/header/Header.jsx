@@ -3,6 +3,7 @@ import "./Header.css";
 import logo from "../../assets/logo3.jpg";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { CiSearch } from "react-icons/ci";
+import { PiBasketBold } from "react-icons/pi";
 
 function Header() {
   return (
@@ -24,6 +25,9 @@ function Header() {
         <button className="header-button">Tüm Kategoriler</button>
       </div>
       <div className="header-user">
+        <button>
+          <PiBasketBold />
+        </button>
         <button className="user-button">
           <FaRegCircleUser />
         </button>
