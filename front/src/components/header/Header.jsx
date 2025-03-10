@@ -1,9 +1,10 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../assets/logo3.jpg";
-import { FaRegCircleUser } from "react-icons/fa6";
+
 import { CiSearch } from "react-icons/ci";
-import { PiBasketBold } from "react-icons/pi";
+import { BsCart2 } from "react-icons/bs";
+import { PiUserCircle } from "react-icons/pi";
 
 function Header() {
   return (
@@ -26,10 +27,10 @@ function Header() {
       </div>
       <div className="header-user">
         <button>
-          <PiBasketBold />
+          <BsCart2 />
         </button>
         <button className="user-button">
-          <FaRegCircleUser />
+          <PiUserCircle />
         </button>
       </div>
     </div>
