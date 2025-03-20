@@ -1,5 +1,6 @@
 import React from "react";
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+import { RiShoppingCartLine } from "react-icons/ri";
 
 import "./ProductCard.css";
 import urun from "../../../assets/urun.png";
@@ -17,15 +18,16 @@ function ProductCard() {
           <div className="product-card-text-row">
             <span className="product-card-price">100 ₺</span>
             <div className="increment-decrement">
-              <button className="decrement">
+              <button className="decrement-btn">
                 <CiSquareMinus />
               </button>
-              <button className="increment">
+              2
+              <button className="increment-btn">
                 <CiSquarePlus />
               </button>
             </div>
-            <button>
-              <span>Sepete Ekle</span>
+            <button className="add-to-cart-btn">
+              <RiShoppingCartLine />
             </button>
           </div>
         </div>

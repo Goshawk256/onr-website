@@ -44,3 +44,57 @@
   text-align: start;
   color: #2e3a4d;
 }
+
+.increment-decrement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  height: 50px;
+}
+.increment-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 28px;
+  color: #2e3a4d;
+  cursor: pointer;
+}
+.decrement-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 28px;
+  color: #2e3a4d;
+  cursor: pointer;
+}
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #2e3a4d;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.add-to-cart-btn:hover {
+  color: #4a5e7f;
+  border: 1px solid #4a5e7f;
+}
