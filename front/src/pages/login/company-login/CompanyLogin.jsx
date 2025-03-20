@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./CompanyLogin.css";
-
+import Header from "../../../components/header/Header";
+import Footer from "../../../components/footer/Footer";
 const CompanyLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
@@ -49,6 +50,7 @@ const CompanyLogin = () => {
 
   return (
     <div className="company-login-main">
+      <Header />
       <div className={`container ${isSignUp ? "active" : ""}`} id="container">
         {/* Üye Ol Formu */}
         <div className="form-container sign-up">
@@ -143,6 +145,7 @@ const CompanyLogin = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

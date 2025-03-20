@@ -8,15 +8,14 @@
 }
 
 .company-login-main {
-  background-color: #ffffff;
-  background: linear-gradient(to right, #ffffff, #ffffff);
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
-  height: 100%;
+  background-color: #ffffff;
+  padding-top: 10%;
+  overflow: hidden;
 }
 
 .company-login-main h1,
@@ -25,14 +24,16 @@ span {
 }
 
 .container {
+  margin-bottom: 2%;
   background-color: #fff;
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  border: 1px solid #ebebeb;
   position: relative;
   overflow: hidden;
   width: 768px;
   max-width: 100%;
   min-height: 480px;
+  z-index: 1;
 }
 
 .container p {
