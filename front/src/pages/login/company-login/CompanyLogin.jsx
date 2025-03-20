@@ -53,13 +53,13 @@ const CompanyLogin = () => {
         {/* Üye Ol Formu */}
         <div className="form-container sign-up">
           <form onSubmit={handleSubmit}>
-            <h1>Üye Ol</h1>
+            <h1>Bayi Ol</h1>
 
             <span>veya üye olmak için e-postanızı kullanın.</span>
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Bayi Adı"
               value={formData.name}
               onChange={handleInputChange}
               required={isSignUp}
@@ -67,20 +67,28 @@ const CompanyLogin = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="E-Posta"
               value={formData.email}
               onChange={handleInputChange}
               required
             />
             <input
+              type="text"
+              name="name"
+              placeholder="Vergi Numarası"
+              value={formData.name}
+              onChange={handleInputChange}
+              required={isSignUp}
+            />
+            <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Şifre"
               value={formData.password}
               onChange={handleInputChange}
               required
             />
-            <button type="submit">Üye Ol</button>
+            <button type="submit">Bayi Ol</button>
           </form>
         </div>
 
@@ -118,7 +126,7 @@ const CompanyLogin = () => {
         <div className="toggle-container">
           <div className="toggle">
             <div className="toggle-panel toggle-left">
-              <p>Merhaba! nanocamkesmemakinesi.com'ya giriş yapın!</p>
+              <p>Merhaba! nanocamkesmemakinesi.com'a Bayi girişi yapın!</p>
               <button onClick={handleToggle} className="hidden" id="login">
                 Giriş Yap
               </button>
@@ -126,10 +134,10 @@ const CompanyLogin = () => {
             <div className="toggle-panel toggle-right">
               <p>
                 Merhaba! nanocamkesmemakinesi.com'dan en iyi şekilde
-                yararlanabilmek için üye olun!
+                yararlanabilmek için Bayi olun!
               </p>
               <button onClick={handleToggle} className="hidden" id="register">
-                Üye Ol
+                Bayi Ol
               </button>
             </div>
           </div>

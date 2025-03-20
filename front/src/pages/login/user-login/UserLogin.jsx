@@ -58,7 +58,7 @@ const CompanyLogin = () => {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Ad Soyad"
               value={formData.name}
               onChange={handleInputChange}
               required={isSignUp}
@@ -66,7 +66,7 @@ const CompanyLogin = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="E-Posta"
               value={formData.email}
               onChange={handleInputChange}
               required
@@ -74,7 +74,7 @@ const CompanyLogin = () => {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Şifre"
               value={formData.password}
               onChange={handleInputChange}
               required
@@ -92,7 +92,7 @@ const CompanyLogin = () => {
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="E-Posta"
               value={formData.email}
               onChange={handleInputChange}
               required
@@ -100,7 +100,7 @@ const CompanyLogin = () => {
             <input
               type="password"
               name="password"
-              placeholder="Password"
+              placeholder="Şifre"
               value={formData.password}
               onChange={handleInputChange}
               required
