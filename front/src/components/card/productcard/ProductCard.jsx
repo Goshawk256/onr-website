@@ -7,8 +7,14 @@ function ProductCard() {
       <div className="product-card-content">
         <img src={urun} alt="" />
         <div className="product-card-text">
-          <p>Ürün Adı</p>
-          <p>Ürün Fiyatı</p>
+          <div className="product-card-text-row">
+            <span className="product-card-title">Ürün Adı</span>
+            <span className="product-card-price">₺ 100</span>
+          </div>
+          <div className="product-card-text-row">
+            <span className="product-card-title">Ürün Adı</span>
+            <span className="product-card-price">₺ 100</span>
+          </div>
         </div>
       </div>
     </div>
