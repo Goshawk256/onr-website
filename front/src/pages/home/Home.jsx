@@ -15,7 +15,7 @@ function Home() {
         </div>
 
         <div className="product-area">
-          {Array.from({ length: 12 }).map((_, index) => (
+          {Array.from({ length: 32 }).map((_, index) => (
             <ProductCard key={index} />
           ))}
         </div>
