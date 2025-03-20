@@ -82,9 +82,10 @@
   padding: 0;
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 50px;
   color: #181e28;
+  color: #2e3a4d;
 }
 
 .product-information-featured-text p {
@@ -94,16 +95,16 @@
 
 .product-information-sub {
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   text-transform: uppercase;
-  color: #686e77;
+  color: #2e3a4d;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
 .product-information-price {
   font-family: "Fjalla One", sans-serif;
-  color: #252525;
+  color: #2e3a4d;
   font-size: 26px;
 }
 
@@ -195,4 +196,40 @@
 .product-information-action button:hover {
   background: #fff;
   color: #2e3a4d;
+}
+.product-information-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  color: #2e3a4d;
+}
+.info-increment-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+  font-size: 20px;
+  border: 1px solid #2e3a4d;
+  border-radius: 5px;
+  color: #2e3a4d;
+  cursor: pointer;
+}
+.info-decrement-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  font-size: 20px;
+  border: 1px solid #2e3a4d;
+  border-radius: 5px;
+  color: #2e3a4d;
+  cursor: pointer;
 }

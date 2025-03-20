@@ -3,6 +3,9 @@ import "./ProductInformation.css";
 import Header from "../../components/header/Header";
 import urun from "../../assets/urun.png";
 
+import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+import { FaPlus, FaMinus } from "react-icons/fa6";
+
 function ProductInformation() {
   return (
     <div className="product-information-main">
@@ -35,18 +38,44 @@ function ProductInformation() {
                   voluptatem nam pariatur voluptate perferendis, asperiores
                   aspernatur! Porro similique consequatur, nobis soluta minima,
                   quasi laboriosam hic cupiditate perferendis esse numquam
-                  magni.
+                  magni. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Autem rem ad eius, eos accusantium qui facere. Odio odit
+                  rem suscipit dolorem laborum sed quae illo asperiores
+                  voluptatum, nobis id sequi!
                 </p>
+                <br />
+                <span>
+                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                    Stok Durumu:{" "}
+                  </span>
+                  <p>Stokta Var</p>
+                  <br />
+                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                    Fiyat:{" "}
+                  </span>
+                  <p>$210.00</p>
+                  <br />
+                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                    Adet:{" "}
+                  </span>
+                  <br />
+                  <div className="product-information-quantity">
+                    <button className="info-decrement-btn">
+                      <FaMinus />
+                    </button>
+                    2
+                    <button className="info-increment-btn">
+                      <FaPlus />
+                    </button>
+                  </div>
+                </span>
               </div>
             </div>
           </div>
           <div className="product-information-card__footer">
-            <div className="product-information-recommend">
-              <p>Recommended by</p>
-              <h3>Andrew Palmer</h3>
-            </div>
+            <div className="product-information-recommend"></div>
             <div className="product-information-action">
-              <button type="button">Add to cart</button>
+              <button type="button">Sepete Ekle</button>
             </div>
           </div>
         </div>
