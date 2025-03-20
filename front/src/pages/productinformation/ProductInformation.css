@@ -45,7 +45,7 @@
 
 .product-information-icon {
   flex: 1 0 10px;
-  background: #115dd8;
+  background: #2e3a4d;
   color: #fff;
   padding: 10px 10px;
   transition: 200ms;
@@ -148,11 +148,11 @@
   left: 40px;
   width: calc(100% - 40px);
   height: 3px;
-  background: #115dd8;
+  background: #2e3a4d;
   background: linear-gradient(
     to right,
-    #115dd8 0%,
-    #115dd8 20%,
+    #2e3a4d 0%,
+    #2e3a4d 20%,
     #ddd 20%,
     #ddd 100%
   );
@@ -177,16 +177,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #115dd8;
+  color: #2e3a4d;
 }
 
 .product-information-action button {
   cursor: pointer;
-  border: 1px solid #115dd8;
+  border: 1px solid #2e3a4d;
   padding: 14px 30px;
   border-radius: 200px;
   color: #fff;
-  background: #115dd8;
+  background: #2e3a4d;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   transition: 200ms;
@@ -194,5 +194,5 @@
 
 .product-information-action button:hover {
   background: #fff;
-  color: #115dd8;
+  color: #2e3a4d;
 }
