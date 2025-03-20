@@ -1,4 +1,5 @@
 .product-card-main {
+  position: relative;
   height: 450px;
   width: 100%;
   display: flex;
@@ -76,6 +77,11 @@
   color: #2e3a4d;
   cursor: pointer;
 }
+.product-card-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e3a4d;
+}
 .add-to-cart-btn {
   display: flex;
   align-items: center;
@@ -97,4 +103,22 @@
 .add-to-cart-btn:hover {
   color: #4a5e7f;
   border: 1px solid #4a5e7f;
+}
+.like-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  color: #c9c9c9;
+  font-size: 28px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
 }
