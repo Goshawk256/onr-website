@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import urun from "../../assets/urun.png";
 
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+import { FaArrowLeft } from "react-icons/fa";
+
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 function ProductInformation() {
@@ -14,8 +16,8 @@ function ProductInformation() {
         <div className="product-information-card">
           <div className="product-information-card__title">
             <div className="product-information-icon">
-              <a href="#">
-                <i className="fa fa-arrow-left"></i>
+              <a href="/">
+                <FaArrowLeft />
               </a>
             </div>
             <h3>Rova Batarya</h3>

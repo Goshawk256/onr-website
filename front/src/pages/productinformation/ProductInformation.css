@@ -20,7 +20,11 @@
   flex-grow: 1;
   max-height: calc(100vh - 10%);
 }
-
+.fa.fa-arrow-left {
+  font-size: 20px;
+  color: #2e3a4d;
+  cursor: pointer;
+}
 .product-information-card {
   transition: 200ms;
   background: #fff;
@@ -47,16 +51,19 @@
   flex: 1 0 10px;
   background: #2e3a4d;
   color: #fff;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  display: flex;
   padding: 10px 10px;
   transition: 200ms;
 }
 
 .product-information-icon a {
   color: #fff;
-}
-
-.product-information-icon:hover {
-  background: #252525;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-information-card__body {
@@ -107,7 +114,6 @@
   color: #2e3a4d;
   font-size: 26px;
 }
-
 .product-information-image {
   padding-top: 15px;
   width: 60%;
