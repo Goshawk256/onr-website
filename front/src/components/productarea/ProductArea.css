@@ -2,8 +2,14 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
-  width: 90%;
+  width: 100%;
   padding: 10px;
   min-height: 600px;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .product-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

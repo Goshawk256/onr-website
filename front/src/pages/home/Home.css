@@ -57,8 +57,3 @@
   cursor: pointer;
   color: #2e3a4d;
 }
-@media screen and (max-width: 768px) {
-  .product-area {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
