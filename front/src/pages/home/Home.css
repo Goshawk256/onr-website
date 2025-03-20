@@ -49,3 +49,19 @@
   min-height: 600px;
   flex-shrink: 0;
 }
+.home-navigate-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10%;
+  height: 50px;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  color: #2e3a4d;
+}
+.home-navigate-buttons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #2e3a4d;
+}

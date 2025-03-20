@@ -19,6 +19,9 @@ function Home() {
             <ProductCard key={index} />
           ))}
         </div>
+        <div className="home-navigate-buttons">
+          <button>Geri</button>1<button>İleri</button>
+        </div>
         <Footer />
       </div>
     </div>
