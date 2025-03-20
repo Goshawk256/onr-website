@@ -52,23 +52,25 @@ function Header() {
           </button>
         </div>
 
-        {[
-          "Nano Cam Kesme Makinesi",
-          "Akıllı Saat",
-          "Arka Kaplama",
-          "Aksesuar",
-          "Rova Nano",
-          "Batarya",
-        ].map((item, index) => (
-          <button
-            key={index}
-            ref={(el) => (buttonRefs.current[index] = el)}
-            onClick={() => toggleDropdown(index)}
-            className="header-button"
-          >
-            {item}
-          </button>
-        ))}
+        <div className="header-buttons">
+          {[
+            "Nano Cam Kesme Makinesi",
+            "Akıllı Saat",
+            "Arka Kaplama",
+            "Aksesuar",
+            "Rova Nano",
+            "Batarya",
+          ].map((item, index) => (
+            <button
+              key={index}
+              ref={(el) => (buttonRefs.current[index] = el)}
+              onClick={() => toggleDropdown(index)}
+              className="header-button"
+            >
+              {item}
+            </button>
+          ))}
+        </div>
       </div>
 
       <div className="header-user">
