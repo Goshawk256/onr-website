@@ -7,10 +7,12 @@ import { CiSearch } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
 import { PiUserCircle } from "react-icons/pi";
 import ButtonsDrop from "../dropdown/header-buttons/ButtonsDrop";
+import CardDrop from "../dropdown/header-cart/CartDrop";
 
 function Header() {
   const navigate = useNavigate();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isCartOpen, setCartOpen] = useState(false);
   const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
   const [activeDropdown, setActiveDropdown] = useState(null);
   const buttonRefs = useRef({});
@@ -70,9 +72,17 @@ function Header() {
       </div>
 
       <div className="header-user">
-        <button>
-          <BsCart2 />
-        </button>
+        <div
+          className="cart-wrapper"
+          onMouseEnter={() => setCartOpen(true)}
+          onMouseLeave={() => setCartOpen(false)}
+        >
+          <button>
+            <BsCart2 />
+          </button>
+          <CardDrop isOpen={isCartOpen} />
+        </div>
+
         <button
           ref={(el) => (buttonRefs.current["user"] = el)}
           className="user-button"
