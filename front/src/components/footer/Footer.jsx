@@ -9,7 +9,6 @@ function Footer() {
         <div className="footer-item"></div>
         <div className="footer-item"></div>
         <div className="footer-item"></div>
-        <div className="footer-item"></div>
       </div>
     </div>
   );
