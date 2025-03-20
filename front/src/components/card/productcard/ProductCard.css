@@ -34,8 +34,13 @@
 }
 .product-card-text-row {
   display: flex;
-  width: 100%;
+  width: 90%;
   height: 50%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+.product-card-title {
+  font-size: 12px;
+  text-align: start;
+  color: #2e3a4d;
 }

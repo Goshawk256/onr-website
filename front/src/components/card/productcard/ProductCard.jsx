@@ -1,4 +1,6 @@
 import React from "react";
+import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+
 import "./ProductCard.css";
 import urun from "../../../assets/urun.png";
 function ProductCard() {
@@ -8,12 +10,23 @@ function ProductCard() {
         <img src={urun} alt="" />
         <div className="product-card-text">
           <div className="product-card-text-row">
-            <span className="product-card-title">Ürün Adı</span>
-            <span className="product-card-price">₺ 100</span>
+            <span className="product-card-title">
+              Rova Batarya Harika Bir ürün ve Bu Harika Ürünü Kaçırmayın
+            </span>
           </div>
           <div className="product-card-text-row">
-            <span className="product-card-title">Ürün Adı</span>
-            <span className="product-card-price">₺ 100</span>
+            <span className="product-card-price">100 ₺</span>
+            <div className="increment-decrement">
+              <button className="decrement">
+                <CiSquareMinus />
+              </button>
+              <button className="increment">
+                <CiSquarePlus />
+              </button>
+            </div>
+            <button>
+              <span>Sepete Ekle</span>
+            </button>
           </div>
         </div>
       </div>
