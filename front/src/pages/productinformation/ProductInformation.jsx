@@ -71,6 +71,7 @@ function ProductInformation() {
                     </button>
                     <div className="product-information-action">
                       <button type="button">Sepete Ekle</button>
+                      <button type="button">Satın Al</button>
                     </div>
                   </div>
                 </span>

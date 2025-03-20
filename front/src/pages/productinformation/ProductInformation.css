@@ -192,6 +192,7 @@
   border: 1px solid #2e3a4d;
   padding: 14px 30px;
   border-radius: 200px;
+  width: 150px;
   margin-left: 50px;
   color: #fff;
   background: #2e3a4d;
@@ -201,8 +202,8 @@
 }
 
 .product-information-action button:hover {
-  background: #fff;
-  color: #2e3a4d;
+  background: #384c6b;
+  color: #fff;
 }
 .product-information-quantity {
   display: flex;
