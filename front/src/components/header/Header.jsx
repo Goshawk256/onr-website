@@ -15,7 +15,6 @@ function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const buttonRefs = useRef({});
 
-  // Her buton için ayrı dropdown içeriği
   const dropdownContents = {
     0: ["Cam Kesme Makinesi 1", "Cam Kesme Makinesi 2"],
     1: ["Saat Modeli 1", "Saat Modeli 2", "Saat Modeli 3"],
