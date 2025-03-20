@@ -57,3 +57,18 @@
   cursor: pointer;
   color: #2e3a4d;
 }
+@media screen and (max-width: 768px) {
+  .home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding-top: 30%;
+    overflow: hidden;
+  }
+  .slider-area {
+    display: none;
+  }
+}

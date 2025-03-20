@@ -126,7 +126,7 @@
 @media screen and (max-width: 768px) {
   .product-card-main {
     position: relative;
-    height: 170px;
+    height: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
