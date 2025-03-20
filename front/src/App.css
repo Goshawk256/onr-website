@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
-  background-color: red;
+  overflow: hidden;
 }
 
 body {
