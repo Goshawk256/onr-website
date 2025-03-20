@@ -118,15 +118,15 @@ const CompanyLogin = () => {
         <div className="toggle-container">
           <div className="toggle">
             <div className="toggle-panel toggle-left">
-              <p>Merhaba! camate.io'ya giriş yapın!</p>
+              <p>Merhaba! nanocamkesmemakinesi.com'ya giriş yapın!</p>
               <button onClick={handleToggle} className="hidden" id="login">
                 Giriş Yap
               </button>
             </div>
             <div className="toggle-panel toggle-right">
               <p>
-                Merhaba! carmate.io'dan en iyi şekilde yararlanabilmek için üye
-                olun!
+                Merhaba! nanocamkesmemakinesi.com'dan en iyi şekilde
+                yararlanabilmek için üye olun!
               </p>
               <button onClick={handleToggle} className="hidden" id="register">
                 Üye Ol
