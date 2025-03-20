@@ -69,16 +69,17 @@ function ProductInformation() {
                     <button className="info-increment-btn">
                       <FaPlus />
                     </button>
+                    <div className="product-information-action">
+                      <button type="button">Sepete Ekle</button>
+                    </div>
                   </div>
                 </span>
               </div>
             </div>
           </div>
+
           <div className="product-information-card__footer">
             <div className="product-information-recommend"></div>
-            <div className="product-information-action">
-              <button type="button">Sepete Ekle</button>
-            </div>
           </div>
         </div>
       </div>
