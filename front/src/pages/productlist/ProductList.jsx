@@ -1,22 +1,18 @@
 import React from "react";
-import "./Home.css";
+import "./ProductList.css";
 import Header from "../../components/header/Header";
 import ProductCard from "../../components/card/productcard/ProductCard";
-import SliderComponent from "../../components/slider/SliderComponent";
 import ProductArea from "../../components/productarea/ProductArea";
 import Footer from "../../components/footer/Footer";
-
-function Home() {
+import "./ProductList.css";
+function ProductList() {
   return (
-    <div className="home-main">
+    <div className="productlist-main">
       <Header />
-      <div className="home-content">
-        <div className="slider-area">
-          <SliderComponent />
-        </div>
-
+      <div className="productlist-content">
+        <span className="category-show-area"> Kategori {" > "} Batarya</span>
         <ProductArea />
-        <div className="home-navigate-buttons">
+        <div className="productlist-navigate-buttons">
           <button>Geri</button>1<button>İleri</button>
         </div>
         <Footer />
@@ -25,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ProductList;
