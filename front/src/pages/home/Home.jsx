@@ -2,7 +2,8 @@ import React from "react";
 import "./Home.css";
 import Header from "../../components/header/Header";
 import ProductCard from "../../components/card/productcard/ProductCard";
-import SliderComponent from "../../components/slider/SliderComponent"; // Yeni eklenen slider
+import SliderComponent from "../../components/slider/SliderComponent";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
             <ProductCard key={index} />
           ))}
         </div>
+        <Footer />
       </div>
     </div>
   );
