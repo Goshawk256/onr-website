@@ -17,6 +17,7 @@
   left: 10px;
   width: 120px;
   height: auto;
+  cursor: pointer;
 }
 
 .header-user {

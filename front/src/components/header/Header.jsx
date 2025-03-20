@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 import logo from "../../assets/logo3.jpg";
 
@@ -7,9 +8,15 @@ import { BsCart2 } from "react-icons/bs";
 import { PiUserCircle } from "react-icons/pi";
 
 function Header() {
+  const navigate = useNavigate();
+
+  const navigateTo = (navigationRoute) => {
+    navigate(navigationRoute);
+  };
+
   return (
     <div className="header-main">
-      <img src={logo} alt="" />
+      <img onClick={() => navigateTo("/")} src={logo} alt="" />
       <div className="header-content">
         <div className="header-search">
           <input type="text" className="search-input" placeholder="Ara..." />
