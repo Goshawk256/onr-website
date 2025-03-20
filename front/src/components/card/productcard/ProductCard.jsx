@@ -5,15 +5,10 @@ function ProductCard() {
   return (
     <div className="product-card-main">
       <div className="product-card-content">
-        <div className="card-container">
-          <div className="card">
-            <div className="front-content">
-              <p>Hover me</p>
-            </div>
-            <div className="content">
-              <p className="heading">Card Hover</p>
-            </div>
-          </div>
+        <img src={urun} alt="" />
+        <div className="product-card-text">
+          <p>Ürün Adı</p>
+          <p>Ürün Fiyatı</p>
         </div>
       </div>
     </div>
