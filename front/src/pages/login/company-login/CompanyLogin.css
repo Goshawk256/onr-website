@@ -14,7 +14,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
-  padding-top: 10%;
+  padding-top: 9%;
   overflow: hidden;
 }
 
@@ -24,15 +24,15 @@ span {
 }
 
 .container {
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   background-color: #fff;
   border-radius: 30px;
   border: 1px solid #ebebeb;
   position: relative;
   overflow: hidden;
-  width: 768px;
+  width: 850px;
   max-width: 100%;
-  min-height: 480px;
+  min-height: 550px;
   z-index: 1;
 }
 
