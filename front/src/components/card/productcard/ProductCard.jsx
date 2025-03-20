@@ -1,7 +1,6 @@
 import React from "react";
 import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
-import { RiShoppingCartLine } from "react-icons/ri";
-
+import { BsCart2 } from "react-icons/bs";
 import "./ProductCard.css";
 import urun from "../../../assets/urun.png";
 function ProductCard() {
@@ -27,7 +26,7 @@ function ProductCard() {
               </button>
             </div>
             <button className="add-to-cart-btn">
-              <RiShoppingCartLine />
+              <BsCart2 />
             </button>
           </div>
         </div>
