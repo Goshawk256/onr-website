@@ -24,6 +24,7 @@
   height: 332px;
   object-fit: cover;
   border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
 }
 .product-card-text {
   display: flex;
