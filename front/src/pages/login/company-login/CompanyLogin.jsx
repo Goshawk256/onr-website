@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./CompanyLogin.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+
 const CompanyLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
@@ -10,6 +11,18 @@ const CompanyLogin = () => {
     password: "",
   });
   const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
+
+  // Cihazın mobil olup olmadığını kontrol et
+  const isMobileDevice = () => {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  };
+
+  // Sayfa yüklendiğinde cihaz tipine göre form durumunu ayarla
+  useEffect(() => {
+    if (isMobileDevice()) {
+      setIsSignUp(false); // Eğer mobilse başlangıçta yalnızca giriş formu gösterilsin
+    }
+  }, []);
 
   // Input değişimlerini yönet
   const handleInputChange = (e) => {
@@ -57,7 +70,6 @@ const CompanyLogin = () => {
           <form onSubmit={handleSubmit}>
             <h1>Bayi Ol</h1>
 
-            <span>veya üye olmak için e-postanızı kullanın.</span>
             <input
               type="text"
               name="name"
@@ -91,6 +103,10 @@ const CompanyLogin = () => {
               required
             />
             <button type="submit">Bayi Ol</button>
+            <div className="mobile-ref-container">
+              <span>Zaten bayimiz misin?</span>
+              <button onClick={handleToggle}>Giriş Yap</button>
+            </div>
           </form>
         </div>
 
@@ -99,7 +115,6 @@ const CompanyLogin = () => {
           <form onSubmit={handleSubmit}>
             <h1>Giriş Yap</h1>
 
-            <span>veya e-posta ve şifreniz ile giriş yapın.</span>
             <input
               type="email"
               name="email"
@@ -118,6 +133,10 @@ const CompanyLogin = () => {
             />
             <a href="#">Şifreni mi unuttun?</a>
             <button type="submit">Giriş Yap</button>
+            <div className="mobile-ref-container">
+              <span>Henüz bayimiz değil misin?</span>
+              <button onClick={handleToggle}>Bayi Ol</button>
+            </div>
           </form>
         </div>
 

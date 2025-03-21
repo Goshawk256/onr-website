@@ -56,7 +56,6 @@ const CompanyLogin = () => {
           <form onSubmit={handleSubmit}>
             <h1>Üye Ol</h1>
 
-            <span>veya üye olmak için e-postanızı kullanın.</span>
             <input
               type="text"
               name="name"
@@ -82,6 +81,10 @@ const CompanyLogin = () => {
               required
             />
             <button type="submit">Üye Ol</button>
+            <div className="mobile-ref-container">
+              <span>Zaten bir hesabın var mı?</span>
+              <button onClick={handleToggle}>Giriş Yap</button>
+            </div>
           </form>
         </div>
 
@@ -90,7 +93,6 @@ const CompanyLogin = () => {
           <form onSubmit={handleSubmit}>
             <h1>Giriş Yap</h1>
 
-            <span>veya e-posta ve şifreniz ile giriş yapın.</span>
             <input
               type="email"
               name="email"
@@ -109,6 +111,10 @@ const CompanyLogin = () => {
             />
             <a href="#">Şifreni mi unuttun?</a>
             <button type="submit">Giriş Yap</button>
+            <div className="mobile-ref-container">
+              <span>Henüz üye olmadın mı?</span>
+              <button onClick={handleToggle}>Üye Ol</button>
+            </div>
           </form>
         </div>
 
