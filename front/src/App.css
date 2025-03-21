@@ -18,3 +18,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Mobildeki Tıklama Gölgesini Kaldırmak */
+button {
+  -webkit-tap-highlight-color: transparent; /* Mobilde mavi arka plan rengini engeller */
+}
+
+/* Dokunmatik Etkileşimleri Düzenlemek */
+button {
+  touch-action: manipulation; /* Mobilde gereksiz dokunmatik etkileşimleri engeller */
+}

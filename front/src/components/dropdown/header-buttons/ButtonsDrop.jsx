@@ -3,9 +3,29 @@ import { motion } from "framer-motion";
 import "./ButtonsDrop.css";
 import { useNavigate } from "react-router-dom";
 
-function UserDrop({ isOpen, position, content }) {
+function ButtonsDrop({ isOpen, position, content }) {
   const navigate = useNavigate();
   const [leftPosition, setLeftPosition] = useState();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Ekran genişliğini kontrol et
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Ekran 768px'den küçükse mobil kabul et
+    };
+
+    // İlk renderda ekran boyutunu kontrol et
+    handleResize();
+
+    // Pencere boyutu değiştiğinde kontrol et
+    window.addEventListener("resize", handleResize);
+
+    // Temizleme fonksiyonu
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   useEffect(() => {
     if (position.left > 1350) {
       setLeftPosition(1300);
@@ -14,6 +34,7 @@ function UserDrop({ isOpen, position, content }) {
       setLeftPosition(position.left);
     }
   }, [position]);
+
   return (
     <motion.div
       className="dropdown-menu"
@@ -22,7 +43,9 @@ function UserDrop({ isOpen, position, content }) {
       transition={{ duration: 0.3 }}
       style={{
         top: `${position.top + 10}px`,
-        left: `${leftPosition}px`,
+        left: isMobile ? "2.5%" : `${leftPosition}px`,
+        transform: isMobile ? "translateX(-50%)" : "none",
+        width: isMobile ? "95%" : "200px",
         position: "absolute",
       }}
     >
@@ -40,4 +63,4 @@ function UserDrop({ isOpen, position, content }) {
   );
 }
 
-export default UserDrop;
+export default ButtonsDrop;
