@@ -107,7 +107,15 @@ const CompanyLogin = () => {
             <button type="submit">Bayi Ol</button>
             <div className="mobile-ref-container">
               <span>Zaten bayimiz misin?</span>
-              <button onClick={handleToggle}>Giriş Yap</button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle();
+                }}
+              >
+                Giriş Yap
+              </button>
             </div>
           </form>
         </div>
@@ -137,7 +145,15 @@ const CompanyLogin = () => {
             <button type="submit">Giriş Yap</button>
             <div className="mobile-ref-container">
               <span>Henüz bayimiz değil misin?</span>
-              <button onClick={handleToggle}>Bayi Ol</button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle();
+                }}
+              >
+                Bayi Ol
+              </button>
             </div>
           </form>
         </div>

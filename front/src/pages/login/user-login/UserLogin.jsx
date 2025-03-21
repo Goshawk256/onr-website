@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import "./UserLogin.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
-const CompanyLogin = () => {
+import { useEffect } from "react";
+const UserLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -9,7 +11,21 @@ const CompanyLogin = () => {
     password: "",
   });
   const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   // Input değişimlerini yönet
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -49,7 +65,7 @@ const CompanyLogin = () => {
 
   return (
     <div className="company-login-main">
-      <Header />
+      {isMobile ? null : <Header />}
       <div className={`container ${isSignUp ? "active" : ""}`} id="container">
         {/* Üye Ol Formu */}
         <div className="form-container sign-up">
@@ -82,8 +98,16 @@ const CompanyLogin = () => {
             />
             <button type="submit">Üye Ol</button>
             <div className="mobile-ref-container">
-              <span>Zaten bir hesabın var mı?</span>
-              <button onClick={handleToggle}>Giriş Yap</button>
+              <span>Zaten Üye misin?</span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle();
+                }}
+              >
+                Giriş Yap
+              </button>
             </div>
           </form>
         </div>
@@ -96,7 +120,7 @@ const CompanyLogin = () => {
             <input
               type="email"
               name="email"
-              placeholder="E-Posta"
+              placeholder="Email"
               value={formData.email}
               onChange={handleInputChange}
               required
@@ -104,7 +128,7 @@ const CompanyLogin = () => {
             <input
               type="password"
               name="password"
-              placeholder="Şifre"
+              placeholder="Password"
               value={formData.password}
               onChange={handleInputChange}
               required
@@ -112,8 +136,16 @@ const CompanyLogin = () => {
             <a href="#">Şifreni mi unuttun?</a>
             <button type="submit">Giriş Yap</button>
             <div className="mobile-ref-container">
-              <span>Henüz üye olmadın mı?</span>
-              <button onClick={handleToggle}>Üye Ol</button>
+              <span>Henüz üye değil misin?</span>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleToggle();
+                }}
+              >
+                Üye Ol
+              </button>
             </div>
           </form>
         </div>
@@ -125,7 +157,7 @@ const CompanyLogin = () => {
         <div className="toggle-container">
           <div className="toggle">
             <div className="toggle-panel toggle-left">
-              <p>Merhaba! nanocamkesmemakinesi.com'ya giriş yapın!</p>
+              <p>Merhaba! nanocamkesmemakinesi.com'a Bayi girişi yapın!</p>
               <button onClick={handleToggle} className="hidden" id="login">
                 Giriş Yap
               </button>
@@ -133,7 +165,7 @@ const CompanyLogin = () => {
             <div className="toggle-panel toggle-right">
               <p>
                 Merhaba! nanocamkesmemakinesi.com'dan en iyi şekilde
-                yararlanabilmek için üye olun!
+                yararlanabilmek için Üye olun!
               </p>
               <button onClick={handleToggle} className="hidden" id="register">
                 Üye Ol
@@ -147,4 +179,4 @@ const CompanyLogin = () => {
   );
 };
 
-export default CompanyLogin;
+export default UserLogin;
