@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./CompanyLogin.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
-import { useEffect } from "react";
 const CompanyLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
@@ -10,25 +9,9 @@ const CompanyLogin = () => {
     email: "",
     password: "",
   });
-  const [message, setMessage] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 768) {
-        setIsMobile(true);
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+  // Input değişimlerini yönet
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -67,8 +50,9 @@ const CompanyLogin = () => {
 
   return (
     <div className="company-login-main">
-      {isMobile ? null : <Header />}
+      <Header />
       <div className={`container ${isSignUp ? "active" : ""}`} id="container">
+        {/* Üye Ol Formu */}
         <div className="form-container sign-up">
           <form onSubmit={handleSubmit}>
             <h1>Bayi Ol</h1>
