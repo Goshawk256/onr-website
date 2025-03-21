@@ -47,7 +47,7 @@ function Header() {
       <div className="header-content">
         <div className="header-search">
           <input type="text" className="search-input" placeholder="Ara..." />
-          <button>
+          <button className="search-button">
             <CiSearch />
           </button>
         </div>
