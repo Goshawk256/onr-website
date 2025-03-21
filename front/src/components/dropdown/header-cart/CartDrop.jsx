@@ -1,10 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./CartDrop.css";
+import { useState, useEffect } from "react";
 
 function CardDrop({ isOpen }) {
   if (!isOpen) return null; // Eğer açık değilse bileşeni hiç render etme
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <motion.div
       className="dropdown-menu"
@@ -20,7 +35,7 @@ function CardDrop({ isOpen }) {
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
         padding: "10px",
         borderRadius: "8px",
-        width: "300px",
+        width: isMobile ? "100%" : "300px",
       }}
     >
       <div>Sepetiniz boş</div>
