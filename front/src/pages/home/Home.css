@@ -71,4 +71,11 @@
   .slider-area {
     display: none;
   }
+  .home-navigate-buttons {
+    width: 30%;
+    font-size: 12px;
+  }
+  .home-navigate-buttons button {
+    font-size: 10px;
+  }
 }
