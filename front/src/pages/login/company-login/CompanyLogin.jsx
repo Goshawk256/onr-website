@@ -66,7 +66,6 @@ const CompanyLogin = () => {
     <div className="company-login-main">
       {isMobile ? null : <Header />}
       <div className={`container ${isSignUp ? "active" : ""}`} id="container">
-        {/* Üye Ol Formu */}
         <div className="form-container sign-up">
           <form onSubmit={handleSubmit}>
             <h1>Bayi Ol</h1>
