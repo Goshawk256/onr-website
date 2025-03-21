@@ -42,7 +42,7 @@ function ButtonsDrop({ isOpen, position, content }) {
       animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -10 }}
       transition={{ duration: 0.3 }}
       style={{
-        top: isMobile ? "100%" : `${position.top + 10}px`,
+        top: isMobile ? "100%" : `65%`,
         left: isMobile ? "2.5%" : `${leftPosition}px`,
         transform: isMobile ? "translateX(-50%)" : "none",
         width: isMobile ? "95%" : "200px",
