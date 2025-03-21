@@ -241,3 +241,97 @@
   color: #2e3a4d;
   cursor: pointer;
 }
+/* Mobil uyumluluk için medya sorguları */
+@media (max-width: 768px) {
+  .product-information-main {
+    padding-top: 5%;
+  }
+
+  .product-information-content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .product-information-card__body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .product-information-half {
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-information-featured-text {
+    width: 100%;
+  }
+
+  .product-information-featured-text h1 {
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .product-information-sub {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .product-information-price {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product-information-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .product-information-description {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .product-information-card__footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .product-information-action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .product-information-action button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .product-information-quantity {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .product-information-icon {
+    flex: 1 0 10px;
+    background: #2e3a4d;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    display: flex;
+    padding: 10px 10px;
+    transition: 200ms;
+    width: 40px;
+  }
+  .product-information-card__footer::before {
+    left: 20px;
+  }
+}
