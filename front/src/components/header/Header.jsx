@@ -84,7 +84,7 @@ function Header() {
           </button>
           <CardDrop isOpen={isCartOpen} />
         </div>
-
+        <span className="mobile-text">Biemtek GSM</span>
         <button
           ref={(el) => (buttonRefs.current["user"] = el)}
           className="user-button"
