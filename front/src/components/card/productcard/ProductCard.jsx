@@ -1,5 +1,6 @@
 import React from "react";
-import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
+
+import { FaPlus, FaMinus } from "react-icons/fa6";
 import { BsCart2 } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -28,11 +29,11 @@ function ProductCard() {
             <span className="product-card-price">5499,99 ₺</span>
             <div className="increment-decrement">
               <button className="decrement-btn">
-                <CiSquareMinus />
+                <FaMinus />
               </button>
               2
               <button className="increment-btn">
-                <CiSquarePlus />
+                <FaPlus />
               </button>
             </div>
             <button className="add-to-cart-btn">

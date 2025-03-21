@@ -3,7 +3,6 @@ import "./ProductInformation.css";
 import Header from "../../components/header/Header";
 import urun from "../../assets/urun.png";
 
-import { CiSquarePlus, CiSquareMinus } from "react-icons/ci";
 import { FaArrowLeft } from "react-icons/fa";
 
 import { FaPlus, FaMinus } from "react-icons/fa6";
