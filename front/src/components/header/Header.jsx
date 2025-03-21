@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/logo3.jpg";
+import logo from "../../assets/fd_logo2.svg";
 
 import { CiSearch } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
