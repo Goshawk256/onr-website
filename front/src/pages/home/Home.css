@@ -61,11 +61,11 @@
   .home-main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
-    padding-top: 31%;
+    padding-top: 0%;
     overflow: hidden;
   }
   .slider-area {
