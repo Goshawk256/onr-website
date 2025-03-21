@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CompanyLogin.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+import { useEffect } from "react";
 const CompanyLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
@@ -9,12 +10,14 @@ const CompanyLogin = () => {
     email: "",
     password: "",
   });
-  const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
+  const [message, setMessage] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth <= 768) {
+        setIsMobile(true);
+      }
     };
 
     handleResize();
@@ -25,7 +28,7 @@ const CompanyLogin = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  // Input değişimlerini yönet
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
