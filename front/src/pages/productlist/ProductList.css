@@ -42,3 +42,11 @@
   cursor: pointer;
   color: #2e3a4d;
 }
+@media screen and (max-width: 768px) {
+  .category-show-area {
+    margin-right: 63%;
+    margin-top: 15px;
+    color: gray;
+    font-size: 12px;
+  }
+}
