@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./CompanyLogin.css";
 import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
+import { useEffect } from "react";
 const CompanyLogin = () => {
   const [isSignUp, setIsSignUp] = useState(false);
   const [formData, setFormData] = useState({
@@ -10,7 +11,21 @@ const CompanyLogin = () => {
     password: "",
   });
   const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
+  const [isMobile, setIsMobile] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   // Input değişimlerini yönet
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -50,7 +65,7 @@ const CompanyLogin = () => {
 
   return (
     <div className="company-login-main">
-      <Header />
+      {isMobile ? null : <Header />}
       <div className={`container ${isSignUp ? "active" : ""}`} id="container">
         {/* Üye Ol Formu */}
         <div className="form-container sign-up">
