@@ -146,14 +146,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    border: 1px solid #ced4da;
+    border: none;
+    background-color: #eaeaea;
     border-radius: 10px;
   }
   .header-search input {
     width: 88%;
+    margin-left: 4px;
     border: none;
     padding: 6px;
     font-size: 16px;
+    background-color: #eaeaea;
     outline: none;
     border-radius: 10px;
   }
