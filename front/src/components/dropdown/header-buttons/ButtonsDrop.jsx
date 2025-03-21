@@ -9,18 +9,14 @@ function ButtonsDrop({ isOpen, position, content }) {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Ekran genişliğini kontrol et
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Ekran 768px'den küçükse mobil kabul et
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    // İlk renderda ekran boyutunu kontrol et
     handleResize();
 
-    // Pencere boyutu değiştiğinde kontrol et
     window.addEventListener("resize", handleResize);
 
-    // Temizleme fonksiyonu
     return () => {
       window.removeEventListener("resize", handleResize);
     };
