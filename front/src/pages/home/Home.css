@@ -32,10 +32,6 @@
 }
 
 .slider-area {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   min-height: 300px;
   flex-shrink: 0;

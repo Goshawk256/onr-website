@@ -46,7 +46,6 @@ body {
   }
 
   & .carousel {
-    margin-top: 10%;
     background-image: radial-gradient(#2b2e4f, #111126);
     height: 50vh;
     overflow: hidden;
