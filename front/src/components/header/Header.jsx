@@ -24,7 +24,7 @@ function Header() {
     3: ["Aksesuar 1", "Aksesuar 2", "Aksesuar 3"],
     4: ["Rova Modeli 1", "Rova Modeli 2"],
     5: ["Batarya 1", "Batarya 2", "Batarya 3"],
-    user: ["Kullanıcı Girişi", "Bayi Girişi"],
+    user: ["Kullanıcı Girişi"],
   };
 
   const toggleDropdown = (buttonKey) => {
