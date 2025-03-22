@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductInformation.css";
 import Header from "../../components/header/Header";
-import urun from "../../assets/urun.png";
+import urun from "../../assets/1.png";
 
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -19,13 +19,13 @@ function ProductInformation() {
                 <FaArrowLeft />
               </a>
             </div>
-            <h3>Rova Batarya</h3>
+            <h3>Nike Air Zoom</h3>
           </div>
           <div className="product-information-card__body">
             <div className="product-information-half">
               <div className="product-information-featured-text">
-                <h1>Rova</h1>
-                <p className="product-information-sub">Silikon Batarya</p>
+                <h1>Nike</h1>
+                <p className="product-information-sub">Nike Air Zoom</p>
                 <p className="product-information-price">$210.00</p>
               </div>
               <div className="product-information-image">

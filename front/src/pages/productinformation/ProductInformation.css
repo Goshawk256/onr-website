@@ -22,7 +22,7 @@
 }
 .fa.fa-arrow-left {
   font-size: 20px;
-  color: #2e3a4d;
+  color: #232442;
   cursor: pointer;
 }
 .product-information-card {
@@ -49,7 +49,7 @@
 
 .product-information-icon {
   flex: 1 0 10px;
-  background: #2e3a4d;
+  background: #232442;
   color: #fff;
   flex-direction: row;
   align-items: center;
@@ -92,7 +92,7 @@
   font-size: 54px;
   line-height: 50px;
   color: #181e28;
-  color: #2e3a4d;
+  color: #232442;
 }
 
 .product-information-featured-text p {
@@ -104,14 +104,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  color: #2e3a4d;
+  color: #232442;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
 .product-information-price {
   font-family: "Fjalla One", sans-serif;
-  color: #2e3a4d;
+  color: #232442;
   font-size: 26px;
 }
 .product-information-image {
@@ -136,7 +136,7 @@
   font-weight: 300;
   line-height: 27px;
   font-size: 16px;
-  color: #555;
+  color: #232442;
 }
 
 .product-information-card__footer {
@@ -155,11 +155,11 @@
   left: 40px;
   width: calc(100% - 40px);
   height: 3px;
-  background: #2e3a4d;
+  background: #232442;
   background: linear-gradient(
     to right,
-    #2e3a4d 0%,
-    #2e3a4d 20%,
+    #232442 0%,
+    #232442 20%,
     #ddd 20%,
     #ddd 100%
   );
@@ -175,7 +175,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
-  color: #555;
+  color: #232442;
 }
 
 .product-information-recommend h3 {
@@ -184,18 +184,18 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2e3a4d;
+  color: #232442;
 }
 
 .product-information-action button {
   cursor: pointer;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #232442;
   padding: 14px 30px;
   border-radius: 200px;
   width: 150px;
   margin-left: 50px;
   color: #fff;
-  background: #2e3a4d;
+  background: #232442;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   transition: 200ms;
@@ -212,7 +212,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 5px;
-  color: #2e3a4d;
+  color: #232442;
 }
 .info-increment-btn {
   background-color: transparent;
@@ -223,9 +223,9 @@
   height: 25px;
   border: none;
   font-size: 20px;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #232442;
   border-radius: 5px;
-  color: #2e3a4d;
+  color: #232442;
   cursor: pointer;
 }
 .info-decrement-btn {
@@ -236,9 +236,9 @@
   width: 25px;
   height: 25px;
   font-size: 20px;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #232442;
   border-radius: 5px;
-  color: #2e3a4d;
+  color: #232442;
   cursor: pointer;
 }
 /* Mobil uyumluluk için medya sorguları */
@@ -321,7 +321,7 @@
   }
   .product-information-icon {
     flex: 1 0 10px;
-    background: #2e3a4d;
+    background: #232442;
     color: #fff;
     flex-direction: row;
     align-items: center;
