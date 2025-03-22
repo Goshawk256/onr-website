@@ -156,3 +156,17 @@
   margin-right: 5%;
   margin-left: 5px;
 }
+@media screen and (max-width: 768px) {
+  .product-container {
+    position: relative;
+    width: auto;
+    height: auto;
+    min-width: 340px;
+    min-height: 464px;
+  }
+  .shoe-price {
+    left: 0%;
+    width: 39%;
+    top: 90%;
+  }
+}
