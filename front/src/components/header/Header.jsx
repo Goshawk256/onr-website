@@ -54,12 +54,12 @@ function Header() {
 
         <div className="header-buttons">
           {[
-            "Nano Cam Kesme Makinesi",
-            "Akıllı Saat",
-            "Arka Kaplama",
-            "Aksesuar",
-            "Rova Nano",
-            "Batarya",
+            "KADIN",
+            "ERKEK",
+            "ÇOCUK",
+            "KOLEKSİYONLAR",
+            "YENİ GELENLER",
+            "SPOR GİYİM",
           ].map((item, index) => (
             <button
               key={index}
