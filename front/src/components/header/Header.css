@@ -111,7 +111,7 @@
 
     align-items: center;
 
-    background-color: #ffffff;
+    background-color: transparent;
 
     border-bottom: none;
     z-index: 1000;
@@ -126,13 +126,13 @@
     margin: 0;
   }
   .header-user button {
-    color: #fff;
+    color: #d1d2f1;
     border: none;
     background-color: transparent;
     cursor: pointer;
     font-size: 24px;
     padding: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #d1d2f1;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -149,7 +149,7 @@
     align-items: center;
     justify-content: start;
     border: none;
-    background-color: transparent;
+    background-color: #505285;
     border-radius: 10px;
   }
   .header-search input {
@@ -159,6 +159,7 @@
     padding: 6px;
     font-size: 16px;
     background-color: transparent;
+    color: #fff;
     outline: none;
     border-radius: 10px;
   }
@@ -166,6 +167,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color: #fff;
     font-size: 24px;
     display: flex;
     padding: 7px;
@@ -177,7 +179,7 @@
     display: block;
     font-size: 20px;
     font-weight: bold;
-    color: #fff;
+    color: #505285;
   }
   .header-content {
     width: 100%;
@@ -217,7 +219,7 @@
     align-items: center;
     width: 100px;
     min-width: 100px;
-    background-color: #fff;
+    background-color: #505285;
     color: #fff;
     font-size: 10px;
     height: 100%;
