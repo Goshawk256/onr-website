@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   background-color: #232442;
-
+  border-bottom: 1px solid #505285;
   z-index: 1000;
 }
 .header-main img {

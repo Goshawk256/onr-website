@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight, FaPlay } from "react-icons/fa";
 import "./SliderComponent.css";
-import img1 from "../../assets/urunonr.png";
-import img2 from "../../assets/urunonr.png";
-import img3 from "../../assets/urunonr.png";
+import img1 from "../../assets/1.png";
+import img2 from "../../assets/2.png";
+import img3 from "../../assets/2.png";
 const items = [
   {
     id: 1,
