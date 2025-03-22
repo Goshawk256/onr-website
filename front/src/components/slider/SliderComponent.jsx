@@ -74,7 +74,6 @@ function SliderComponent() {
         </button>
       </div>
       <div className="indicators">
-        <div className="number">0{active + 1}</div>
         <ul>
           {items.map((_, index) => (
             <li
