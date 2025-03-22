@@ -180,6 +180,9 @@ body {
         cursor: pointer;
         pointer-events: auto;
         transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
           border: 1px solid #659cdf;
