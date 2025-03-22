@@ -190,19 +190,87 @@
     position: relative;
     width: auto;
     height: auto;
-    min-width: 340px;
-    min-height: 464px;
+    min-width: 50%;
+    min-height: 264px;
+    height: 264px;
   }
   .shoe-price {
     left: 0%;
-    width: 39%;
+    width: 70%;
     top: 90%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
+  }
+  .shoe-price span {
+    color: #fff;
+    font-size: 10px;
+    margin-right: 5%;
+    margin-left: 5px;
+  }
+  .product-container .imgBox .sizes li {
+    list-style: none;
+    margin: 0;
+    width: 25px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    color: #1e6b7b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    font-weight: 700;
+    font-size: 10px;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+  .product-container .imgBox .sizes {
+    display: flex;
+    margin-right: 5%;
+    width: 170px;
+    margin-bottom: 10px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .product-container .imgBox .sizes span {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-right: 5px;
+  }
+  .imgBox {
+    min-height: 264px !important;
+    padding: 30px 10px !important;
+    padding-left: 25px !important;
+  }
+  .product-container .thumb {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .product-container .thumb li {
+    width: 30px;
+    height: 30px;
+  }
+
+  .imgBox h2 {
+    font-size: 12px;
   }
   .product-container .imgBox .btn {
     position: absolute;
-    bottom: 15px;
-    width: 40px;
-    height: 40px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,17 +280,17 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
+    border-radius: 10px;
     backdrop-filter: blur(4px);
     cursor: pointer;
-    margin-left: 73%;
-    font-size: 24px;
+    margin-left: 60%;
+    font-size: 14px;
   }
   .product-container .imgBox .btn-incele {
     position: absolute;
-    bottom: 15px;
-    width: 40px;
-    height: 40px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,10 +300,10 @@
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 15px;
+    border-radius: 10px;
     backdrop-filter: blur(4px);
     cursor: pointer;
-    margin-left: 40%;
-    font-size: 24px;
+    margin-left: 25%;
+    font-size: 14px;
   }
 }
