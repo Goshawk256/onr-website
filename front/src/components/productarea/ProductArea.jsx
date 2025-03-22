@@ -4,7 +4,7 @@ import "./ProductArea.css";
 function ProductArea() {
   return (
     <div className="product-area">
-      {Array.from({ length: 25 }).map((_, index) => (
+      {Array.from({ length: 8 }).map((_, index) => (
         <ProductCard key={index} />
       ))}
     </div>
