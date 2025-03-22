@@ -1,12 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProductCard.css";
 import shoe1 from "../../../assets/shoes1.png";
 import shoe2 from "../../../assets/shoes2.png";
 import shoe3 from "../../../assets/shoes3.png";
+import { RiShoppingCartLine } from "react-icons/ri";
+import { FaRegEye } from "react-icons/fa";
 
 const ProductCard = () => {
   const [selectedShoe, setSelectedShoe] = useState(shoe1);
-
+  const navigate = useNavigate();
+  const navigateToProduct = () => {
+    navigate("/productinformation");
+  };
   return (
     <div className="product-container">
       <div className="thumb">
@@ -36,7 +42,10 @@ const ProductCard = () => {
           <span>Fiyat: </span> 5499 TL
         </div>
         <a href="#" className="btn">
-          Sepete Ekle
+          <RiShoppingCartLine />
+        </a>
+        <a className="btn-incele" href="/productinformation">
+          <FaRegEye />
         </a>
       </div>
     </div>
