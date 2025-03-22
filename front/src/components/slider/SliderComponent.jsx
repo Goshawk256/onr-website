@@ -1,46 +1,91 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import img1 from "../../assets/saat.jpeg";
-import img2 from "../../assets/bayi.png";
-import img3 from "../../assets/bayi2.png";
+import { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight, FaPlay } from "react-icons/fa";
 import "./SliderComponent.css";
-
-const images = [img1, img2, img3];
+import img1 from "../../assets/1.png";
+import img2 from "../../assets/2.png";
+import img3 from "../../assets/3.png";
+const items = [
+  {
+    id: 1,
+    img: img3,
+    title: "NIKE D.01",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  },
+  {
+    id: 2,
+    img: img2,
+    title: "NIKE D.02",
+    desc: "Ipsum facere ipsa blanditiis quidem dignissimos enim quam corrupti.",
+  },
+  {
+    id: 3,
+    img: img1,
+    title: "NIKE D.03",
+    desc: "Praesentium ipsam assumenda?",
+  },
+];
 
 function SliderComponent() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1, // Aynı anda kaç resim gözüksün
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2500,
-    arrows: true, // Oklar aktif
-  };
+  const [active, setActive] = useState(0);
+  const lastPosition = items.length - 1;
+
+  useEffect(() => {
+    const autoPlay = setInterval(() => {
+      setActive((prev) => (prev + 1 > lastPosition ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(autoPlay);
+  }, [active]);
 
   return (
-    <div className="slider-container">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image}
-              alt={`slide-${index}`}
-              style={{
-                width: "100%",
-                height: "300px",
-                objectFit: "cover",
-                borderRadius: "10px",
-              }}
-            />
+    <section className="carousel">
+      <div className="list">
+        {items.map((item, index) => (
+          <div
+            key={item.id}
+            className={`item ${index === active ? "active" : ""}`}
+          >
+            <figure>
+              <img src={item.img} alt={item.title} />
+            </figure>
+            <div className="content">
+              <p className="category">Sport Shoes</p>
+              <h2>{item.title}</h2>
+              <p className="description">{item.desc}</p>
+              <div className="more">
+                <button>Add To Cart</button>
+                <button>
+                  <FaPlay /> See More
+                </button>
+              </div>
+            </div>
           </div>
         ))}
-      </Slider>
-    </div>
+      </div>
+      <div className="arrows">
+        <button
+          onClick={() => setActive(active - 1 < 0 ? lastPosition : active - 1)}
+        >
+          <FaChevronLeft />
+        </button>
+        <button
+          onClick={() => setActive(active + 1 > lastPosition ? 0 : active + 1)}
+        >
+          <FaChevronRight />
+        </button>
+      </div>
+      <div className="indicators">
+        <div className="number">0{active + 1}</div>
+        <ul>
+          {items.map((_, index) => (
+            <li
+              key={index}
+              className={index === active ? "active" : ""}
+              onClick={() => setActive(index)}
+            ></li>
+          ))}
+        </ul>
+      </div>
+    </section>
   );
 }
-
 export default SliderComponent;
