@@ -84,13 +84,14 @@
 
 .product-container .imgBox .sizes {
   display: flex;
+  margin-right: 50%;
   justify-content: center;
   align-items: center;
 }
 
 .product-container .imgBox .sizes span {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-right: 5px;
 }
@@ -126,14 +127,32 @@
   background: #fff;
   display: inline-block;
   text-decoration: none;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 30px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   font-weight: 500;
   color: #1e6b7b;
   transition: 0.25s;
+  margin-left: 52%;
 }
 
-.product-container .imgBox .btn:hover {
-  letter-spacing: 2px;
+.shoe-price {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+  right: 5%;
+  top: 80%;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-right: 5px;
+}
+.shoe-price span {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 5%;
+  margin-left: 5px;
 }

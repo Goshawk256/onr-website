@@ -26,14 +26,17 @@ const ProductCard = () => {
         <h2>Nike Air Zoom</h2>
         <img src={selectedShoe} alt="Selected Shoe" className="shoes" />
         <ul className="sizes">
-          <span>Size</span>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
+          <span>Beden: </span>
+          <li>41</li>
+          <li>42</li>
+          <li>43</li>
+          <li>44</li>
         </ul>
+        <div className="shoe-price">
+          <span>Fiyat: </span> 5499 TL
+        </div>
         <a href="#" className="btn">
-          Add To Cart
+          Sepete Ekle
         </a>
       </div>
     </div>

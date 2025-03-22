@@ -43,15 +43,15 @@
   align-items: center;
   width: 10%;
   height: 50px;
-  background-color: #ffffff;
+  background-color: transparent;
   flex-shrink: 0;
-  color: #2e3a4d;
+  color: #fff;
 }
 .home-navigate-buttons button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: #2e3a4d;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .home-main {
