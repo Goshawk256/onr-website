@@ -54,12 +54,12 @@ function Header() {
 
         <div className="header-buttons">
           {[
-            "Nano Cam Kesme Makinesi",
-            "Akıllı Saat",
-            "Arka Kaplama",
-            "Aksesuar",
-            "Rova Nano",
-            "Batarya",
+            "KADIN",
+            "ERKEK",
+            "ÇOCUK",
+            "KOLEKSİYONLAR",
+            "YENİ GELENLER",
+            "SPOR GİYİM",
           ].map((item, index) => (
             <button
               key={index}
@@ -84,7 +84,7 @@ function Header() {
           </button>
           <CardDrop isOpen={isCartOpen} />
         </div>
-        <span className="mobile-text">Biemtek GSM</span>
+        <span className="mobile-text">ONR Sneakers</span>
         <button
           ref={(el) => (buttonRefs.current["user"] = el)}
           className="user-button"

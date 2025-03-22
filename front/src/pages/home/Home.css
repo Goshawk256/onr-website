@@ -14,7 +14,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #232442;
   padding-top: 10%;
   overflow: hidden;
 }
@@ -32,10 +32,6 @@
 }
 
 .slider-area {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   min-height: 300px;
   flex-shrink: 0;
@@ -47,15 +43,15 @@
   align-items: center;
   width: 10%;
   height: 50px;
-  background-color: #ffffff;
+  background-color: transparent;
   flex-shrink: 0;
-  color: #2e3a4d;
+  color: #fff;
 }
 .home-navigate-buttons button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: #2e3a4d;
+  color: #fff;
 }
 @media screen and (max-width: 768px) {
   .home-main {
@@ -64,7 +60,7 @@
     align-items: start;
     width: 100%;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #232442;
     padding-top: 0%;
     overflow: hidden;
   }
