@@ -78,12 +78,15 @@ body {
           & h2 {
             font-family: "League Gothic";
             font-size: 11em;
+            color: rgba(255, 255, 255, 0.8);
+
             line-height: 1em;
           }
 
           & .description {
             align-items: center;
-            color: #fff8;
+            color: rgba(255, 255, 255, 1);
+
             max-width: 400px;
             font-size: small;
             text-align: right;
