@@ -294,15 +294,6 @@
     margin-left: 25%;
     font-size: 14px;
   }
-  .product-container .thumb li:active img {
-    transform: rotate(-35deg);
-  }
-  .product-container .imgBox .sizes li:active {
-    transform: translateY(-10px);
-  }
-  .product-container .imgBox img:active {
-    transform: scale(1.2) rotate(-15deg) translateX(20px);
-  }
 }
 @media (min-width: 1024px) {
   .product-container .thumb li:hover img {
