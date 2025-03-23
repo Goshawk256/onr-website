@@ -119,9 +119,9 @@
 .product-information-image {
   background-color: #232442;
   border-radius: 10px;
-  width: 60%;
+  width: 70%;
   overflow-x: scroll;
-  max-height: 366.23px;
+  max-height: 415.78px;
   scroll-snap-type: x mandatory;
   display: flex;
   flex-direction: row;
