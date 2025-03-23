@@ -7,7 +7,6 @@ import { CiSearch } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
 import { PiUserCircle } from "react-icons/pi";
 import ButtonsDrop from "../dropdown/header-buttons/ButtonsDrop";
-import CardDrop from "../dropdown/header-cart/CartDrop";
 
 function Header() {
   const navigate = useNavigate();
@@ -74,15 +73,10 @@ function Header() {
       </div>
 
       <div className="header-user">
-        <div
-          className="cart-wrapper"
-          onMouseEnter={() => setCartOpen(true)}
-          onMouseLeave={() => setCartOpen(false)}
-        >
+        <div className="cart-wrapper">
           <button>
             <BsCart2 />
           </button>
-          <CardDrop isOpen={isCartOpen} />
         </div>
         <span className="mobile-text">ONR SNEAKERS</span>
         <button
