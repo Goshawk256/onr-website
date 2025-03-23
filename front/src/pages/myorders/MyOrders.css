@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 90%;
   gap: 20px;
   overflow: auto;
@@ -31,6 +31,7 @@
 
 .order-card {
   width: 75%;
+  min-height: 260px;
   background: rgb(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 15px;
@@ -74,6 +75,7 @@
   align-items: center;
   gap: 15px;
   height: 100%;
+  margin-top: 10px;
 }
 
 .order-image {
@@ -88,8 +90,9 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: start;
+  justify-content: space-between;
   height: 100%;
+  min-height: 140px;
   width: 70%;
   gap: 5px;
 }

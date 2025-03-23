@@ -93,7 +93,7 @@ function MyOrders() {
                 <motion.div
                   className="order-extra-details"
                   initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
+                  animate={{ height: "140px", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
