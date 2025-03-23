@@ -152,7 +152,10 @@
   margin-left: 43%;
   font-size: 24px;
 }
-
+.shoes.animate {
+  transform: scale(1.2) rotate(-15deg) translateX(20px);
+  transition: transform 0.5s ease-in-out;
+}
 .shoe-price {
   position: absolute;
   display: flex;
@@ -296,13 +299,4 @@
   }
 }
 @media (min-width: 1024px) {
-  .product-container .thumb li:hover img {
-    transform: rotate(-35deg);
-  }
-  .product-container .imgBox .sizes li:hover {
-    transform: translateY(-10px);
-  }
-  .product-container .imgBox img:hover {
-    transform: scale(1.2) rotate(-15deg) translateX(20px);
-  }
 }
