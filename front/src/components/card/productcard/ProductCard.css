@@ -161,7 +161,7 @@
   justify-content: start;
   width: 50%;
   left: 6%;
-  top: 93%;
+  top: 92%;
   color: #232442;
   font-size: 18px;
   letter-spacing: 1px;
@@ -293,6 +293,15 @@
     cursor: pointer;
     margin-left: 25%;
     font-size: 14px;
+  }
+  .product-container .thumb li:active img {
+    transform: rotate(-35deg);
+  }
+  .product-container .imgBox .sizes li:active {
+    transform: translateY(-10px);
+  }
+  .product-container .imgBox img:active {
+    transform: scale(1.2) rotate(-15deg) translateX(20px);
   }
 }
 @media (min-width: 1024px) {
