@@ -46,10 +46,6 @@
   transition: 0.5s;
 }
 
-.product-container .thumb li:hover img {
-  transform: rotate(-35deg);
-}
-
 .product-container .imgBox {
   position: absolute;
   top: 0;
@@ -96,10 +92,6 @@
   margin-right: 5px;
 }
 
-.product-container .imgBox img:hover {
-  transform: scale(1.2) rotate(-15deg) translateX(20px);
-}
-
 .product-container .imgBox .sizes li {
   list-style: none;
   width: 30px;
@@ -118,10 +110,6 @@
 
   cursor: pointer;
   transition: 0.25s;
-}
-
-.product-container .imgBox .sizes li:hover {
-  transform: translateY(-10px);
 }
 
 .product-container .imgBox .btn {
@@ -217,10 +205,10 @@
     width: 25px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
     color: #1e6b7b;
     display: flex;
     justify-content: center;
@@ -276,12 +264,12 @@
     justify-content: center;
     color: #1e6b7b;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
     cursor: pointer;
     margin-left: 60%;
     font-size: 14px;
@@ -296,14 +284,25 @@
     justify-content: center;
     color: #1e6b7b;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
     cursor: pointer;
     margin-left: 25%;
     font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  .product-container .thumb li:hover img {
+    transform: rotate(-35deg);
+  }
+  .product-container .imgBox .sizes li:hover {
+    transform: translateY(-10px);
+  }
+  .product-container .imgBox img:hover {
+    transform: scale(1.2) rotate(-15deg) translateX(20px);
   }
 }
