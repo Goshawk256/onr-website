@@ -46,10 +46,6 @@
   transition: 0.5s;
 }
 
-.product-container .thumb li:hover img {
-  transform: rotate(-35deg);
-}
-
 .product-container .imgBox {
   position: absolute;
   top: 0;
@@ -73,11 +69,12 @@
 }
 
 .product-container .imgBox h2 {
-  color: #fff;
+  color: #232442;
   letter-spacing: 1px;
 }
 
 .product-container .imgBox img {
+  cursor: pointer;
   width: 80%;
   transition: 0.25s;
 }
@@ -90,14 +87,10 @@
 }
 
 .product-container .imgBox .sizes span {
-  color: #fff;
+  color: #232442;
   font-size: 14px;
   letter-spacing: 1px;
   margin-right: 5px;
-}
-
-.product-container .imgBox img:hover {
-  transform: scale(1.2) rotate(-15deg) translateX(20px);
 }
 
 .product-container .imgBox .sizes li {
@@ -109,7 +102,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   backdrop-filter: blur(4px);
-  color: #1e6b7b;
+  color: #232442;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,10 +113,6 @@
   transition: 0.25s;
 }
 
-.product-container .imgBox .sizes li:hover {
-  transform: translateY(-10px);
-}
-
 .product-container .imgBox .btn {
   position: absolute;
   bottom: 15px;
@@ -132,7 +121,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1e6b7b;
+  color: #232442;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -152,7 +141,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #1e6b7b;
+  color: #232442;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -164,23 +153,26 @@
   margin-left: 43%;
   font-size: 24px;
 }
-
+.shoes.animate {
+  transform: scale(1.2) rotate(-15deg) translateX(20px);
+  transition: transform 0.5s ease-in-out;
+}
 .shoe-price {
   position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   width: 50%;
-  right: 5%;
-  top: 80%;
-  color: #fff;
+  left: 6%;
+  top: 92%;
+  color: #232442;
   font-size: 18px;
   letter-spacing: 1px;
   margin-right: 5px;
 }
 .shoe-price span {
-  color: #fff;
+  color: #232442;
   font-size: 14px;
   margin-right: 5%;
   margin-left: 5px;
@@ -206,7 +198,7 @@
     justify-content: start;
   }
   .shoe-price span {
-    color: #fff;
+    color: #232442;
     font-size: 10px;
     margin-right: 5%;
     margin-left: 5px;
@@ -217,11 +209,11 @@
     width: 25px;
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
-    color: #1e6b7b;
+    backdrop-filter: none;
+    color: #232442;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +233,7 @@
   }
 
   .product-container .imgBox .sizes span {
-    color: #fff;
+    color: #232442;
     font-size: 10px;
     letter-spacing: 1px;
     margin-right: 5px;
@@ -274,14 +266,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1e6b7b;
+    color: #232442;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
     cursor: pointer;
     margin-left: 60%;
     font-size: 14px;
@@ -294,16 +286,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1e6b7b;
+    color: #232442;
     background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: none;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    backdrop-filter: blur(4px);
+    backdrop-filter: none;
     cursor: pointer;
     margin-left: 25%;
     font-size: 14px;
   }
+}
+@media (min-width: 1024px) {
 }
