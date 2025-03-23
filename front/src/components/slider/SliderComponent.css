@@ -240,7 +240,7 @@ body {
     & .list {
       & .item {
         transform: translateX(calc(100vw * var(--calculation)));
-        transition: 0.5s;
+        transition: 1s;
         opacity: 0;
 
         & figure {
