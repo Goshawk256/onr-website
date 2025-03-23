@@ -22,7 +22,7 @@ const ProductCard = () => {
 
     setTimeout(() => {
       setAnimate(false);
-    }, 1000);
+    }, 1500);
   };
 
   return (
