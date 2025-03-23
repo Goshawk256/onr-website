@@ -117,9 +117,7 @@ function MyOrders() {
                       <span className="address-details-row-content">
                         Adres Başlığı: Ev Adresi <br />
                         <br />
-                        Adres: <br />
-                        <br />
-                        Türkiye | Istanbul <br />
+                        Adres: Türkiye | Istanbul <br />
                         <br /> Maltepe | İnönü Mah. <br />
                         <br /> Cansu Apt. | No: 24
                       </span>
