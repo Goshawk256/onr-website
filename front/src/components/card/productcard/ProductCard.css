@@ -336,4 +336,25 @@
     margin-left: 25%;
     font-size: 14px;
   }
+  .container-like {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+    width: 40px;
+    top: 10px;
+
+    left: 5px;
+  }
+
+  .container-like svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    transition: all 0.3s;
+    fill: #7b7db1;
+  }
 }
