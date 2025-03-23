@@ -4,6 +4,8 @@ import Header from "../../components/header/Header";
 import img1 from "../../assets/1.png";
 import img2 from "../../assets/2.png";
 import img3 from "../../assets/3.png";
+import { IoIosArrowForward } from "react-icons/io";
+
 const orders = [
   {
     id: "ABC-6457325",
@@ -15,7 +17,7 @@ const orders = [
       "Printed black & white short kurti",
     ],
     moreItems: 2,
-    price: "₹ 12,500",
+    price: "₺ 12,500",
     image: img1,
   },
   {
@@ -23,7 +25,7 @@ const orders = [
     status: "Delivered",
     date: "10 May 2021",
     items: ["Two-seater wooden polished dining table"],
-    price: "₹ 8,999",
+    price: "₺ 8,999",
     image: img2,
   },
   {
@@ -31,7 +33,7 @@ const orders = [
     status: "Delivered",
     date: "10 May 2021",
     items: ["Two-seater wooden polished dining table"],
-    price: "₹ 8,999",
+    price: "₺ 8,999",
     image: img3,
   },
 ];
@@ -57,12 +59,19 @@ function MyOrders() {
             <div className="order-details">
               <img src={order.image} alt="Order Item" className="order-image" />
               <div className="order-info">
-                <p className="order-id">Order ID: {order.id}</p>
-                <p className="order-items">
-                  {order.items.join(" | ")}
-                  {order.moreItems ? ` & ${order.moreItems} more items` : ""}
-                </p>
+                <div className="order-info-first">
+                  <p className="order-id">Order ID: {order.id}</p>
+                  <p className="order-items">
+                    {order.items.join(" | ")}
+                    {order.moreItems ? ` & ${order.moreItems} more items` : ""}
+                  </p>
+                </div>
                 <p className="order-price">{order.price}</p>
+              </div>
+              <div className="expand-order">
+                <button>
+                  <IoIosArrowForward />
+                </button>
               </div>
             </div>
           </div>
