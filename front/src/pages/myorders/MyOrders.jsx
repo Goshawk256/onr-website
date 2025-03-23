@@ -93,7 +93,7 @@ function MyOrders() {
                 <motion.div
                   className="order-extra-details"
                   initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "140px", opacity: 1 }}
+                  animate={{ height: "200px", opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
@@ -104,7 +104,9 @@ function MyOrders() {
                       </span>
                       <span className="address-details-row-content">
                         Sipariş Tarihi: 19.02.2024 <br />
+                        <br />
                         Sipariş Durumu: Onay Bekliyor <br />
+                        <br />
                         Tahmini Teslimat Tarihi: 24.02.2024
                       </span>
                     </div>
@@ -114,9 +116,12 @@ function MyOrders() {
                       </span>
                       <span className="address-details-row-content">
                         Adres Başlığı: Ev Adresi <br />
+                        <br />
                         Adres: <br />
-                        Türkiye | Istanbul <br /> Maltepe | İnönü Mah. <br />{" "}
-                        Cansu Apt. | No: 24
+                        <br />
+                        Türkiye | Istanbul <br />
+                        <br /> Maltepe | İnönü Mah. <br />
+                        <br /> Cansu Apt. | No: 24
                       </span>
                     </div>
                     <div className="address-details-row">
@@ -125,7 +130,9 @@ function MyOrders() {
                       </span>
                       <span className="address-details-row-content">
                         Ad Soyad: Ali Veli <br />
+                        <br />
                         Telefon: +90 532 123 45 67 <br />
+                        <br />
                       </span>
                     </div>
                   </div>
