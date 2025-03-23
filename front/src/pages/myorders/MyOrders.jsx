@@ -11,7 +11,7 @@ import { IoIosArrowForward } from "react-icons/io";
 const orders = [
   {
     id: "ABC-6457325",
-    status: "In progress",
+    status: "Yolda",
     date: "10 May 2021",
     items: [
       "Blue & pink Silk Saree",
@@ -26,7 +26,7 @@ const orders = [
   },
   {
     id: "ABC-6457325",
-    status: "Delivered",
+    status: "Teslim Edildi",
     date: "10 May 2021",
     items: ["Two-seater wooden polished dining table"],
     price: "₺ 8,999",
@@ -36,7 +36,7 @@ const orders = [
   },
   {
     id: "ABC-6457325",
-    status: "Delivered",
+    status: "Teslim Edildi",
     date: "10 May 2021",
     items: ["Two-seater wooden polished dining table"],
     price: "₺ 8,999",
@@ -63,7 +63,7 @@ function MyOrders() {
             <div className="order-status">
               <span
                 className={
-                  order.status === "Delivered" ? "delivered" : "in-progress"
+                  order.status === "Teslim Edildi" ? "delivered" : "in-progress"
                 }
               >
                 {order.status}
@@ -97,10 +97,38 @@ function MyOrders() {
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
-                  <p className="order-address">Address: {order.address}</p>
-                  <p className="order-estimated-delivery">
-                    Estimated Delivery: {order.estiminatedDelivery}
-                  </p>
+                  <div className="address-details">
+                    <div className="address-details-row">
+                      <span className="address-details-row-header">
+                        Teslimat Detayları:
+                      </span>
+                      <span className="address-details-row-content">
+                        Sipariş Tarihi: 19.02.2024 <br />
+                        Sipariş Durumu: Onay Bekliyor <br />
+                        Tahmini Teslimat Tarihi: 24.02.2024
+                      </span>
+                    </div>
+                    <div className="address-details-row">
+                      <span className="address-details-row-header">
+                        Teslimat Adresi:
+                      </span>
+                      <span className="address-details-row-content">
+                        Adres Başlığı: Ev Adresi <br />
+                        Adres: <br />
+                        Türkiye | Istanbul <br /> Maltepe | İnönü Mah. <br />{" "}
+                        Cansu Apt. | No: 24
+                      </span>
+                    </div>
+                    <div className="address-details-row">
+                      <span className="address-details-row-header">
+                        İletişim Bilgileri:
+                      </span>
+                      <span className="address-details-row-content">
+                        Ad Soyad: Ali Veli <br />
+                        Telefon: +90 532 123 45 67 <br />
+                      </span>
+                    </div>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
