@@ -12,10 +12,6 @@ const ProductCard = () => {
   const [animate, setAnimate] = useState(false);
   const navigate = useNavigate();
 
-  const navigateToProduct = () => {
-    navigate("/productinformation");
-  };
-
   const handleShoeChange = (shoe) => {
     setAnimate(true);
     setSelectedShoe(shoe);
