@@ -48,17 +48,17 @@ function ProductInformation() {
                 </p>
                 <br />
                 <span>
-                  <span style={{ color: "#232442", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Stok Durumu:{" "}
                   </span>
                   <p>Stokta Var</p>
                   <br />
-                  <span style={{ color: "#232442", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Fiyat:{" "}
                   </span>
                   <p>$210.00</p>
                   <br />
-                  <span style={{ color: "#232442", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Adet:{" "}
                   </span>
                   <br />

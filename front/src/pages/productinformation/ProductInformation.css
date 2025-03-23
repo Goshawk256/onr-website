@@ -22,7 +22,7 @@
 }
 .fa.fa-arrow-left {
   font-size: 20px;
-  color: #232442;
+  color: #fff;
   cursor: pointer;
 }
 .product-information-card {
@@ -74,13 +74,15 @@
 }
 
 .product-information-half {
+  display: flex;
+  flex-direction: row;
   box-sizing: border-box;
   padding: 0 15px;
   flex: 1 0 50%;
 }
 
 .product-information-featured-text {
-  width: 400px;
+  width: 200px;
   text-align: start;
 }
 
@@ -92,7 +94,7 @@
   font-size: 54px;
   line-height: 50px;
 
-  color: #232442;
+  color: #fff;
 }
 
 .product-information-featured-text p {
@@ -104,14 +106,14 @@
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  color: #232442;
+  color: #fff;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
 .product-information-price {
   font-family: "Fjalla One", sans-serif;
-  color: #232442;
+  color: #fff;
   font-size: 26px;
 }
 .product-information-image {
@@ -145,7 +147,7 @@
   font-weight: 300;
   line-height: 27px;
   font-size: 16px;
-  color: #232442;
+  color: #fff;
 }
 
 .product-information-card__footer {
@@ -184,7 +186,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
-  color: #232442;
+  color: #fff;
 }
 
 .product-information-recommend h3 {
@@ -193,7 +195,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #232442;
+  color: #fff;
 }
 
 .product-information-action button {
@@ -221,7 +223,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 5px;
-  color: #232442;
+  color: #fff;
 }
 .info-increment-btn {
   background-color: transparent;
@@ -234,7 +236,7 @@
   font-size: 20px;
   border: 1px solid #232442;
   border-radius: 5px;
-  color: #232442;
+  color: #fff;
   cursor: pointer;
 }
 .info-decrement-btn {
@@ -247,7 +249,7 @@
   font-size: 20px;
   border: 1px solid #232442;
   border-radius: 5px;
-  color: #232442;
+  color: #fff;
   cursor: pointer;
 }
 /* Mobil uyumluluk için medya sorguları */
@@ -269,28 +271,33 @@
   }
 
   .product-information-half {
+    flex-direction: column;
     width: 100%;
     padding: 0;
   }
 
   .product-information-featured-text {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .product-information-featured-text h1 {
     font-size: 28px;
     line-height: 32px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-sub {
     font-size: 14px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-price {
     font-size: 20px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-image {
