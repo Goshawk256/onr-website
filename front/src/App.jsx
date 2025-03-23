@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import ProductList from "./pages/productlist/ProductList";
 import ProductInformation from "./pages/productinformation/ProductInformation";
-import ScrollToTop from "./helpers/scrollhelper/ScrollHelper";
+import ScrollToTop from "./ScrollController";
 import CompanyLogin from "./pages/login/company-login/CompanyLogin";
 import UserLogin from "./pages/login/user-login/UserLogin";
 function App() {
