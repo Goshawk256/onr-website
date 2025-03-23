@@ -177,6 +177,44 @@
   margin-right: 5%;
   margin-left: 5px;
 }
+.container-like input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-like {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  z-index: 100;
+  width: 50px;
+  top: 10px;
+  /* left: 385px; */
+  left: 10px;
+}
+
+.container-like svg {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.3s;
+  fill: #7b7db1;
+}
+
+.container-like svg:hover {
+  transform: scale(1.1);
+}
+
+.container-like input:checked ~ svg {
+  fill: #e3474f;
+}
+
 @media screen and (max-width: 768px) {
   .product-container {
     position: relative;
@@ -298,6 +336,4 @@
     margin-left: 25%;
     font-size: 14px;
   }
-}
-@media (min-width: 1024px) {
 }
