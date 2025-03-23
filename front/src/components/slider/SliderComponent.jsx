@@ -14,11 +14,11 @@ function SliderComponent() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Aynı anda kaç resim gözüksün
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2500,
-    arrows: true, // Oklar aktif
+    arrows: true,
   };
 
   return (
