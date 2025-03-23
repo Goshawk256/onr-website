@@ -2,9 +2,9 @@ import React from "react";
 import "./ProductInformation.css";
 import Header from "../../components/header/Header";
 import urun from "../../assets/1.png";
-
+import urun2 from "../../assets/2.png";
+import urun3 from "../../assets/3.png";
 import { FaArrowLeft } from "react-icons/fa";
-
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 function ProductInformation() {
@@ -29,7 +29,9 @@ function ProductInformation() {
                 <p className="product-information-price">$210.00</p>
               </div>
               <div className="product-information-image">
-                <img src={urun} alt="Rova Batarya" />
+                <img src={urun} alt="product photo" />
+                <img src={urun2} alt="product photo" />
+                <img src={urun3} alt="product photo" />
               </div>
             </div>
             <div className="product-information-half">

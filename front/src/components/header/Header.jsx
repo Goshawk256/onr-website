@@ -18,12 +18,12 @@ function Header() {
   const buttonRefs = useRef({});
 
   const dropdownContents = {
-    0: ["Cam Kesme Makinesi 1", "Cam Kesme Makinesi 2"],
-    1: ["Saat Modeli 1", "Saat Modeli 2", "Saat Modeli 3"],
-    2: ["Kaplama Tipi 1", "Kaplama Tipi 2"],
-    3: ["Aksesuar 1", "Aksesuar 2", "Aksesuar 3"],
-    4: ["Rova Modeli 1", "Rova Modeli 2"],
-    5: ["Batarya 1", "Batarya 2", "Batarya 3"],
+    0: ["Section 1", "Section 2"],
+    1: ["Section 1", "Section 2", "Section 3"],
+    2: ["Section 1", "Section 2"],
+    3: ["Section 1", "Section 2", "Section 3"],
+    4: ["Section 1", "Section 2"],
+    5: ["Section 1", "Section 2", "Section 3"],
     user: ["Kullanıcı Girişi"],
   };
 
