@@ -4,7 +4,7 @@ import "./CartDrop.css";
 import { useState, useEffect } from "react";
 
 function CardDrop({ isOpen }) {
-  if (!isOpen) return null; // Eğer açık değilse bileşeni hiç render etme
+  if (!isOpen) return null;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
