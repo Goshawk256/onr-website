@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProductInformation.css";
 import Header from "../../components/header/Header";
-import urun from "../../assets/1.png";
+import urun from "../../assets/urundetay.png";
 
 import { FaArrowLeft } from "react-icons/fa";
 
