@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #232442;
   padding-top: 10%;
   overflow: hidden;
 }
@@ -27,7 +27,7 @@
 }
 .product-information-card {
   transition: 200ms;
-  background: #fff;
+  background: #5a5c96;
 }
 
 .product-information-card__title {
@@ -40,7 +40,7 @@
   flex: 0 1 200px;
   text-align: right;
   margin: 0;
-  color: #252525;
+  color: #fff;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -91,7 +91,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 54px;
   line-height: 50px;
-  color: #181e28;
+
   color: #232442;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .product-information-action button:hover {
-  background: #384c6b;
+  background: #43457a;
   color: #fff;
 }
 .product-information-quantity {
