@@ -14,7 +14,6 @@ const ProductCard = () => {
   const [animate, setAnimate] = useState(false);
   const navigate = useNavigate();
 
-
   const handleShoeChange = (shoe) => {
     setAnimate(true);
     setSelectedShoe(shoe);
@@ -55,7 +54,7 @@ const ProductCard = () => {
           <li>44</li>
         </ul>
         <div className="shoe-price">
-          <span>Fiyat: </span> 5499 TL
+          <span>Fiyat: </span> <b>5499,99 ₺</b>
         </div>
         <a href="#" className="btn">
           <RiShoppingCartLine />
