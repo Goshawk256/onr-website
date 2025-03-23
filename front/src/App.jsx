@@ -6,6 +6,7 @@ import ProductList from "./pages/productlist/ProductList";
 import ProductInformation from "./pages/productinformation/ProductInformation";
 import ScrollToTop from "./helpers/scrollhelper/ScrollHelper";
 import UserLogin from "./pages/login/user-login/UserLogin";
+import MyOrders from "./pages/myorders/MyOrders";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/productlist" element={<ProductList />} />
         <Route path="/productinformation" element={<ProductInformation />} />
         <Route path="/kullanıcı-girişi" element={<UserLogin />} />
+        <Route path="/siparişlerim" element={<MyOrders />} />
       </Routes>
     </Router>
   );
