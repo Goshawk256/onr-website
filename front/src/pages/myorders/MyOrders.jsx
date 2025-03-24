@@ -98,7 +98,17 @@ function MyOrders() {
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   <div className="address-details">
-                    <div className="address-details-row">
+                    {/* Teslimat Detayları */}
+                    <motion.div
+                      className="address-details-row"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        ease: "easeInOut",
+                        delay: 0.2,
+                      }}
+                    >
                       <span className="address-details-row-header">
                         Teslimat Detayları:
                       </span>
@@ -109,8 +119,19 @@ function MyOrders() {
                         <br />
                         Tahmini Teslimat Tarihi: 24.02.2024
                       </span>
-                    </div>
-                    <div className="address-details-row">
+                    </motion.div>
+
+                    {/* Teslimat Adresi */}
+                    <motion.div
+                      className="address-details-row"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        ease: "easeInOut",
+                        delay: 0.4,
+                      }}
+                    >
                       <span className="address-details-row-header">
                         Teslimat Adresi:
                       </span>
@@ -121,8 +142,19 @@ function MyOrders() {
                         <br /> Maltepe | İnönü Mah. <br />
                         <br /> Cansu Apt. | No: 24
                       </span>
-                    </div>
-                    <div className="address-details-row">
+                    </motion.div>
+
+                    {/* İletişim Bilgileri */}
+                    <motion.div
+                      className="address-details-row"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{
+                        duration: 0.5,
+                        ease: "easeInOut",
+                        delay: 0.6,
+                      }}
+                    >
                       <span className="address-details-row-header">
                         İletişim Bilgileri:
                       </span>
@@ -132,7 +164,7 @@ function MyOrders() {
                         Telefon: +90 532 123 45 67 <br />
                         <br />
                       </span>
-                    </div>
+                    </motion.div>
                   </div>
                 </motion.div>
               )}
