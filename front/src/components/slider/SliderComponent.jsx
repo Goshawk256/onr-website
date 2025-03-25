@@ -26,6 +26,7 @@ const items = [
 ];
 
 function SliderComponent() {
+
   const [active, setActive] = useState(0);
   const lastPosition = items.length - 1;
 
@@ -35,6 +36,18 @@ function SliderComponent() {
     }, 5000);
     return () => clearInterval(autoPlay);
   }, [active]);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: true,
+  };
+
 
   return (
     <section className="carousel">
