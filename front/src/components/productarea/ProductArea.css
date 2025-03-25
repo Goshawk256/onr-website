@@ -1,8 +1,8 @@
 .product-area {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 92%;
   padding: 10px;
   min-height: 600px;
   flex-shrink: 0;
@@ -12,5 +12,6 @@
   .product-area {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 }

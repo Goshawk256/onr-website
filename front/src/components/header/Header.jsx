@@ -1,13 +1,12 @@
 import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
-import logo from "../../assets/logo3.jpg";
+import logo from "../../assets/logo_onr.png";
 
 import { CiSearch } from "react-icons/ci";
 import { BsCart2 } from "react-icons/bs";
 import { PiUserCircle } from "react-icons/pi";
 import ButtonsDrop from "../dropdown/header-buttons/ButtonsDrop";
-import CardDrop from "../dropdown/header-cart/CartDrop";
 
 function Header() {
   const navigate = useNavigate();
@@ -18,13 +17,13 @@ function Header() {
   const buttonRefs = useRef({});
 
   const dropdownContents = {
-    0: ["Cam Kesme Makinesi 1", "Cam Kesme Makinesi 2"],
-    1: ["Saat Modeli 1", "Saat Modeli 2", "Saat Modeli 3"],
-    2: ["Kaplama Tipi 1", "Kaplama Tipi 2"],
-    3: ["Aksesuar 1", "Aksesuar 2", "Aksesuar 3"],
-    4: ["Rova Modeli 1", "Rova Modeli 2"],
-    5: ["Batarya 1", "Batarya 2", "Batarya 3"],
-    user: ["Kullanıcı Girişi", "Bayi Girişi"],
+    0: ["Section 1", "Section 2"],
+    1: ["Section 1", "Section 2", "Section 3"],
+    2: ["Section 1", "Section 2"],
+    3: ["Section 1", "Section 2", "Section 3"],
+    4: ["Section 1", "Section 2"],
+    5: ["Section 1", "Section 2", "Section 3"],
+    user: ["Kullanıcı Girişi", "Siparişlerim", "Favorilerim", "Çıkış Yap"],
   };
 
   const toggleDropdown = (buttonKey) => {
@@ -54,12 +53,12 @@ function Header() {
 
         <div className="header-buttons">
           {[
-            "Nano Cam Kesme Makinesi",
-            "Akıllı Saat",
-            "Arka Kaplama",
-            "Aksesuar",
-            "Rova Nano",
-            "Batarya",
+            "KADIN",
+            "ERKEK",
+            "ÇOCUK",
+            "KOLEKSİYONLAR",
+            "YENİ GELENLER",
+            "SPOR GİYİM",
           ].map((item, index) => (
             <button
               key={index}
@@ -74,17 +73,12 @@ function Header() {
       </div>
 
       <div className="header-user">
-        <div
-          className="cart-wrapper"
-          onMouseEnter={() => setCartOpen(true)}
-          onMouseLeave={() => setCartOpen(false)}
-        >
+        <div className="cart-wrapper">
           <button>
             <BsCart2 />
           </button>
-          <CardDrop isOpen={isCartOpen} />
         </div>
-        <span className="mobile-text">Biemtek GSM</span>
+        <span className="mobile-text">ONR SNEAKERS</span>
         <button
           ref={(el) => (buttonRefs.current["user"] = el)}
           className="user-button"

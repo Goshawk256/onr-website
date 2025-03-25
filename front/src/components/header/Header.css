@@ -8,8 +8,8 @@
   align-items: center;
   top: 0;
   left: 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e9ecef;
+  background-color: #232442;
+  border-bottom: 1px solid #505285;
   z-index: 1000;
 }
 .header-main img {
@@ -37,7 +37,7 @@
   justify-content: space-around;
 }
 .header-user button {
-  color: #2e3a4d;
+  color: #fff;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -60,7 +60,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  color: gray;
+  color: #fff;
 }
 .search-button {
   width: 20%;
@@ -83,6 +83,7 @@
   font-size: 16px;
   outline: none;
   border-radius: 10px;
+  background-color: transparent;
 }
 .header-search button {
   border: none;
@@ -90,7 +91,7 @@
   cursor: pointer;
   font-size: 24px;
   display: flex;
-
+  color: white;
   padding: 7.22px;
   margin-top: 0.1px;
   align-items: center;
@@ -110,7 +111,7 @@
 
     align-items: center;
 
-    background-color: #ffffff;
+    background-color: transparent;
 
     border-bottom: none;
     z-index: 1000;
@@ -125,13 +126,13 @@
     margin: 0;
   }
   .header-user button {
-    color: #2e3a4d;
+    color: #d1d2f1;
     border: none;
     background-color: transparent;
     cursor: pointer;
     font-size: 24px;
     padding: 5px;
-    border: 1px solid #2e3a4d;
+    border: 1px solid #d1d2f1;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -148,7 +149,7 @@
     align-items: center;
     justify-content: start;
     border: none;
-    background-color: #eaeaea;
+    background-color: #505285;
     border-radius: 10px;
   }
   .header-search input {
@@ -157,7 +158,8 @@
     border: none;
     padding: 6px;
     font-size: 16px;
-    background-color: #eaeaea;
+    background-color: transparent;
+    color: #fff;
     outline: none;
     border-radius: 10px;
   }
@@ -165,6 +167,7 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color: #fff;
     font-size: 24px;
     display: flex;
     padding: 7px;
@@ -176,7 +179,7 @@
     display: block;
     font-size: 20px;
     font-weight: bold;
-    color: #2e3a4d;
+    color: #505285;
   }
   .header-content {
     width: 100%;
@@ -216,7 +219,7 @@
     align-items: center;
     width: 100px;
     min-width: 100px;
-    background-color: #2e3a4d;
+    background-color: #505285;
     color: #fff;
     font-size: 10px;
     height: 100%;

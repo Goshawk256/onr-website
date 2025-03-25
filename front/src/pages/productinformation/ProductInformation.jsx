@@ -1,10 +1,10 @@
 import React from "react";
 import "./ProductInformation.css";
 import Header from "../../components/header/Header";
-import urun from "../../assets/urun.png";
-
+import urun from "../../assets/1.png";
+import urun2 from "../../assets/2.png";
+import urun3 from "../../assets/3.png";
 import { FaArrowLeft } from "react-icons/fa";
-
 import { FaPlus, FaMinus } from "react-icons/fa6";
 
 function ProductInformation() {
@@ -19,17 +19,19 @@ function ProductInformation() {
                 <FaArrowLeft />
               </a>
             </div>
-            <h3>Rova Batarya</h3>
+            <h3>Nike Air Zoom</h3>
           </div>
           <div className="product-information-card__body">
             <div className="product-information-half">
               <div className="product-information-featured-text">
-                <h1>Rova</h1>
-                <p className="product-information-sub">Silikon Batarya</p>
+                <h1>Nike</h1>
+                <p className="product-information-sub">Nike Air Zoom</p>
                 <p className="product-information-price">$210.00</p>
               </div>
               <div className="product-information-image">
-                <img src={urun} alt="Rova Batarya" />
+                <img src={urun} alt="product photo" />
+                <img src={urun2} alt="product photo" />
+                <img src={urun3} alt="product photo" />
               </div>
             </div>
             <div className="product-information-half">
@@ -46,17 +48,17 @@ function ProductInformation() {
                 </p>
                 <br />
                 <span>
-                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Stok Durumu:{" "}
                   </span>
                   <p>Stokta Var</p>
                   <br />
-                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Fiyat:{" "}
                   </span>
                   <p>$210.00</p>
                   <br />
-                  <span style={{ color: "#2e3a4d", fontWeight: "800" }}>
+                  <span style={{ color: "#fff", fontWeight: "800" }}>
                     Adet:{" "}
                   </span>
                   <br />

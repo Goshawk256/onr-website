@@ -10,7 +10,7 @@ const UserLogin = () => {
     email: "",
     password: "",
   });
-  const [message, setMessage] = useState(null); // Hata veya başarı mesajları için durum
+  const [message, setMessage] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -157,15 +157,15 @@ const UserLogin = () => {
         <div className="toggle-container">
           <div className="toggle">
             <div className="toggle-panel toggle-left">
-              <p>Merhaba! nanocamkesmemakinesi.com'a Bayi girişi yapın!</p>
+              <p>Merhaba! onrsneakers.com'a giriş yapın!</p>
               <button onClick={handleToggle} className="hidden" id="login">
                 Giriş Yap
               </button>
             </div>
             <div className="toggle-panel toggle-right">
               <p>
-                Merhaba! nanocamkesmemakinesi.com'dan en iyi şekilde
-                yararlanabilmek için Üye olun!
+                Merhaba! onrsneakers.com'dan en iyi şekilde yararlanabilmek için
+                Üye olun!
               </p>
               <button onClick={handleToggle} className="hidden" id="register">
                 Üye Ol

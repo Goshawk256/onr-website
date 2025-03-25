@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
+  background-color: #232442;
   padding-top: 10%;
   overflow: hidden;
 }
@@ -22,12 +22,12 @@
 }
 .fa.fa-arrow-left {
   font-size: 20px;
-  color: #2e3a4d;
+  color: #fff;
   cursor: pointer;
 }
 .product-information-card {
   transition: 200ms;
-  background: #fff;
+  background: #5a5c96;
 }
 
 .product-information-card__title {
@@ -40,7 +40,7 @@
   flex: 0 1 200px;
   text-align: right;
   margin: 0;
-  color: #252525;
+  color: #fff;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -49,7 +49,7 @@
 
 .product-information-icon {
   flex: 1 0 10px;
-  background: #2e3a4d;
+  background: #232442;
   color: #fff;
   flex-direction: row;
   align-items: center;
@@ -74,13 +74,15 @@
 }
 
 .product-information-half {
+  display: flex;
+  flex-direction: row;
   box-sizing: border-box;
   padding: 0 15px;
   flex: 1 0 50%;
 }
 
 .product-information-featured-text {
-  width: 400px;
+  width: 200px;
   text-align: start;
 }
 
@@ -91,8 +93,8 @@
   font-family: "Montserrat", sans-serif;
   font-size: 54px;
   line-height: 50px;
-  color: #181e28;
-  color: #2e3a4d;
+
+  color: #fff;
 }
 
 .product-information-featured-text p {
@@ -104,25 +106,34 @@
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  color: #2e3a4d;
+  color: #fff;
   font-weight: 300;
   margin-bottom: 5px;
 }
 
 .product-information-price {
   font-family: "Fjalla One", sans-serif;
-  color: #2e3a4d;
+  color: #fff;
   font-size: 26px;
 }
 .product-information-image {
-  padding-top: 15px;
-  width: 60%;
+  background-color: #232442;
+  border-radius: 10px;
+  width: 70%;
+  overflow-x: scroll;
+  max-height: 415.78px;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .product-information-image img {
+  scroll-snap-align: center;
   display: block;
   max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .product-information-description {
@@ -136,7 +147,7 @@
   font-weight: 300;
   line-height: 27px;
   font-size: 16px;
-  color: #555;
+  color: #fff;
 }
 
 .product-information-card__footer {
@@ -155,11 +166,11 @@
   left: 40px;
   width: calc(100% - 40px);
   height: 3px;
-  background: #2e3a4d;
+  background: #232442;
   background: linear-gradient(
     to right,
-    #2e3a4d 0%,
-    #2e3a4d 20%,
+    #232442 0%,
+    #232442 20%,
     #ddd 20%,
     #ddd 100%
   );
@@ -175,7 +186,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
-  color: #555;
+  color: #fff;
 }
 
 .product-information-recommend h3 {
@@ -184,25 +195,25 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #2e3a4d;
+  color: #fff;
 }
 
 .product-information-action button {
   cursor: pointer;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #232442;
   padding: 14px 30px;
   border-radius: 200px;
   width: 150px;
   margin-left: 50px;
   color: #fff;
-  background: #2e3a4d;
+  background: #232442;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   transition: 200ms;
 }
 
 .product-information-action button:hover {
-  background: #384c6b;
+  background: #43457a;
   color: #fff;
 }
 .product-information-quantity {
@@ -212,7 +223,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 5px;
-  color: #2e3a4d;
+  color: #fff;
 }
 .info-increment-btn {
   background-color: transparent;
@@ -223,9 +234,9 @@
   height: 25px;
   border: none;
   font-size: 20px;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #fff;
   border-radius: 5px;
-  color: #2e3a4d;
+  color: #fff;
   cursor: pointer;
 }
 .info-decrement-btn {
@@ -236,9 +247,9 @@
   width: 25px;
   height: 25px;
   font-size: 20px;
-  border: 1px solid #2e3a4d;
+  border: 1px solid #fff;
   border-radius: 5px;
-  color: #2e3a4d;
+  color: #fff;
   cursor: pointer;
 }
 /* Mobil uyumluluk için medya sorguları */
@@ -260,28 +271,33 @@
   }
 
   .product-information-half {
+    flex-direction: column;
     width: 100%;
     padding: 0;
   }
 
   .product-information-featured-text {
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 
   .product-information-featured-text h1 {
     font-size: 28px;
     line-height: 32px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-sub {
     font-size: 14px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-price {
     font-size: 20px;
-    text-align: center;
+    text-align: start;
+    margin-bottom: 5px !important;
   }
 
   .product-information-image {
@@ -321,7 +337,7 @@
   }
   .product-information-icon {
     flex: 1 0 10px;
-    background: #2e3a4d;
+    background: #232442;
     color: #fff;
     flex-direction: row;
     align-items: center;
