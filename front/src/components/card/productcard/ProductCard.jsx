@@ -67,7 +67,7 @@ const ProductCard = () => {
           <li>44</li>
         </ul>
         <div className="shoe-price">
-          <span>Fiyat: </span> <b>5499 ₺</b>
+          <span>Fiyat: </span> <b>549,99 ₺</b>
         </div>
         <a href="#" className="btn">
           <RiShoppingCartLine />
