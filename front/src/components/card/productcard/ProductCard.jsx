@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ProductCard.css";
 
-import shoe1 from "../../../assets/shoes1.png";
-import shoe2 from "../../../assets/shoes2.png";
-import shoe3 from "../../../assets/shoes3.png";
+import shoe1 from "../../../assets/1.png";
+import shoe2 from "../../../assets/2.png";
+import shoe3 from "../../../assets/3.png";
 
 import { RiShoppingCartLine } from "react-icons/ri";
 import { FaRegEye } from "react-icons/fa";
